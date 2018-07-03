@@ -1,0 +1,329 @@
+/* 05.01. Header */
+.header {
+	position: relative;
+	z-index: 20;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	margin-bottom: ptr(60);
+	border-bottom: 1px solid #dddddd;
+
+	@include media-breakpoint-up(lg) {
+		align-items: stretch;
+	}
+
+	&--slider {
+		border-bottom: 0;
+	}
+
+	&__logo {
+		display: flex;
+		order: 1;
+		justify-content: center;
+		align-items: center;
+		background-color: $brand-primary;
+		width: 100%;
+		padding: ptr(30) ptr(20);
+		word-wrap: break-word;
+
+		@include media-breakpoint-up(lg) {
+			padding: ptr(20);
+		}
+
+		&--default {
+			@include media-breakpoint-up(lg) {
+				height: ptr(180);
+				width: ptr(180);
+			}
+		}
+
+		// Only in use when there is template with slider.
+		&--big {
+			@include media-breakpoint-up(lg) {
+				height: ptr(400);
+				width: ptr(400);
+			}
+
+			@media (min-width: 1400px) {
+				height: ptr(500);
+				width: ptr(500);
+			}
+		}
+
+		&-text {
+			font-size: ptr(36);
+			margin-bottom: 0;
+			color: #ffffff;
+			min-width: 0;
+			max-width: 100%; // IE10 hack.
+		}
+
+		&:focus,
+		&:hover {
+			text-decoration: none;
+		}
+
+		img {
+			flex: none; // IE11 hack.
+		}
+	}
+
+	&__navigation {
+		order: 3;
+		width: 100%;
+		margin-left: ptr(30);
+		margin-right: ptr(30);
+
+		@include media-breakpoint-up(lg) {
+			z-index: 10;
+			height: ptr(100);
+			width: calc(100% - #{ptr(180)});
+			background-color: $brand-secondary;
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+
+	// Only in use when there is template with slider.
+	&__navigation-container {
+		order: 3;
+		width: 100%;
+
+		@include media-breakpoint-up(lg) {
+			order: 5;
+			background-color: $brand-secondary;
+		}
+
+		.container {
+			@include media-breakpoint-down(md) {
+				padding-left: 0;
+				padding-right: 0;
+				margin-left: 0;
+				margin-right: 0;
+				max-width: none;
+				width: auto;
+			}
+		}
+
+		.header__navigation {
+			max-width: 100%;
+			width: auto;
+
+			@include media-breakpoint-up(lg) {
+				width: 100%;
+			}
+		}
+	}
+
+	// Only in use when there is template with slider.
+	&__slider {
+		order: 5;
+		width: 100%;
+
+		@include media-breakpoint-up(lg) {
+			order: 2;
+			width: calc(100% - #{ptr(400)});
+		}
+
+		@media (min-width: 1400px) {
+			width: calc(100% - #{ptr(500)});
+		}
+	}
+
+	// Only in use when there is template with slider.
+	&__info {
+		order: 4;
+		width: 100%;
+
+		@include media-breakpoint-up(lg) {
+			height: ptr(180);
+			width: ptr(400);
+			margin-top: ptr(-180);
+		}
+
+		@media (min-width: 1400px) {
+			width: ptr(500);
+		}
+	}
+
+	&__widgets {
+		order: 4;
+		font-size: ptr(14);
+		background-color: #ffffff;
+		width: 100%;
+
+		@include media-breakpoint-up(lg) {
+			display: flex;
+			justify-content: space-between;
+			width: calc(100% - #{ptr(180)});
+			height: ptr(80);
+			margin-top: ptr(-80);
+			margin-left: ptr(180);
+		}
+
+		&-left,
+		&-right {
+			text-align: center;
+
+			@include media-breakpoint-up(lg) {
+				display: flex;
+				align-items: center;
+			}
+		}
+
+		&-left {
+			margin-left: ptr(30);
+			margin-right: ptr(30);
+
+			@include media-breakpoint-up(lg) {
+				text-align: left;
+				padding-left: ptr(30);
+				margin-left: 0;
+				margin-right: 0;
+			}
+
+			@include media-breakpoint-up(xl) {
+				padding-left: ptr(60);
+			}
+
+			.widget {
+				position: relative;
+				padding-bottom: ptr(15);
+				margin-bottom: ptr(15);
+
+				@include media-breakpoint-up(lg) {
+					padding-right: ptr(15);
+					margin-right: ptr(15);
+					padding-bottom: 0;
+					margin-bottom: 0;
+				}
+
+				@include media-breakpoint-up(xl) {
+					padding-right: ptr(30);
+					margin-right: ptr(30);
+				}
+
+				&::after {
+					position: absolute;
+					content: '';
+					background-color: rgba(0, 0, 0, .1);
+					width: 100%;
+					height: 1px;
+					bottom: 0;
+					left: 0;
+
+					@include media-breakpoint-up(lg) {
+						width: 1px;
+						height: ptr(20);
+						bottom: calc(50% - #{ptr(9)});
+						left: inherit;
+						right: 0;
+					}
+				}
+
+				&:last-of-type {
+					padding-right: 0;
+
+					&::after {
+						display: none;
+					}
+				}
+			}
+		}
+
+		&-right {
+			background-color: $gray-lightest;
+			padding: ptr(15);
+			border-left: 1px solid #dddddd;
+
+			@include media-breakpoint-up(lg) {
+				text-align: right;
+				padding: 0 ptr(15);
+			}
+
+			@include media-breakpoint-up(xl) {
+				padding: 0 ptr(30);
+			}
+
+			.widget {
+				position: relative;
+				padding-top: ptr(15);
+				margin-top: ptr(15);
+
+				@include media-breakpoint-up(lg) {
+					padding-left: ptr(15);
+					margin-left: ptr(15);
+					padding-top: 0;
+					margin-top: 0;
+				}
+
+				@include media-breakpoint-up(xl) {
+					padding-left: ptr(30);
+					margin-left: ptr(30);
+				}
+
+				&::before {
+					position: absolute;
+					content: '';
+					background-color: rgba(0, 0, 0, .1);
+					width: 100%;
+					height: 1px;
+					top: 0;
+					left: 0;
+
+					@include media-breakpoint-up(lg) {
+						width: 1px;
+						height: ptr(20);
+						top: calc(50% - #{ptr(9)});
+					}
+				}
+
+				&:first-of-type {
+					padding-left: 0;
+					margin-left: 0;
+					padding-top: 0;
+					margin-top: 0;
+
+					&::before {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+
+	+ .page-header__container,
+	+ .page-header-single,
+	+ .page-header-portfolio,
+	+ .alternative-slider {
+		margin-top: ptr(-60);
+	}
+
+	&__navbar-toggler {
+		order: 2;
+		display: block;
+		height: ptr(60);
+		width: 100%;
+		padding: 0;
+		margin: ptr(30) ptr(30) ptr(15);
+
+		.header & {
+			font-size: ptr(16);
+			border-radius: 4px;
+		}
+
+		.fa {
+			.header & {
+				font-size: ptr(28);
+				vertical-align: middle;
+				margin-right: ptr(12);
+			}
+		}
+
+		&:focus,
+		&:hover,
+		&:active:focus {
+			outline: none;
+		}
+	}
+}

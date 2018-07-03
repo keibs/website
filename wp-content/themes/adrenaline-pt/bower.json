@@ -1,0 +1,25 @@
+{
+  "name": "adrenaline-wp",
+  "authors": [
+    "ProtesuThemes <info@proteusnet.com>"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.5",
+    "picturefill": "^3.0.0",
+    "font-awesome": "~4.7.0",
+    "mustache": "~2.1.3",
+    "slick-carousel": "^1.6.0"
+  },
+  "devDependencies": {
+    "requirejs": "~2.1.11",
+    "almond": "~0.3.0"
+  }
+}

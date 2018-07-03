@@ -1,0 +1,1456 @@
+# Copyright (C) 2016 ProteusThemes
+# This file is distributed under the GPL 2.0.
+msgid ""
+msgstr ""
+"Project-Id-Version: Adrenaline PT 0.0.0-tmp\n"
+"Report-Msgid-Bugs-To: http://support.proteusthemes.com/\n"
+"POT-Creation-Date: 2016-07-06 07:03:12+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n 0.5.4\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
+"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
+
+#: 404.php:13
+msgid "404 Picture"
+msgstr ""
+
+#: 404.php:16
+msgid "You surfed to the wrong side of the page"
+msgstr ""
+
+#: 404.php:21
+#. translators: the first %s for line break, the second and third %s for link
+#. to home page wrap
+msgid "Page you are looking for is not here. %s Go %s Home %s or try to search:"
+msgstr ""
+
+#: comments.php:22
+msgid "Comment Navigation"
+msgstr ""
+
+#: comments.php:23
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:24
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:33 comments.php:81
+msgid "Comments for this post are closed."
+msgstr ""
+
+#: comments.php:47 comments.php:48
+msgid "First and Last name"
+msgstr ""
+
+#: comments.php:53 comments.php:54
+msgid "E-mail Address"
+msgstr ""
+
+#: comments.php:59 comments.php:60
+msgid "Website"
+msgstr ""
+
+#: comments.php:69
+msgid "New Comment"
+msgstr ""
+
+#: functions.php:89 header.php:60
+msgid "Main Menu"
+msgstr ""
+
+#: header.php:58
+msgid "MENU"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1027
+msgid "[PT] Theme Options"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1028
+msgid "All Adrenaline theme specific settings."
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1041
+msgid "Logo"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1042
+msgid "Logo for the Adrenaline theme."
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1048
+msgid "Header"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1049
+msgid "All layout and appearance settings for the header."
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1055
+msgid "Navigation"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1056
+msgid "Navigation for the Adrenaline theme."
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1062
+msgid "Page Header Area"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1063
+msgid "All layout and appearance settings for the page header area (regular pages)."
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1069
+msgid "Breadcrumbs"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1070
+msgid "All layout and appearance settings for breadcrumbs."
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1076
+msgid "Theme Layout &amp; Colors"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1083
+msgid "Shop"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1091
+msgid "Portfolio"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1098 inc/theme-sidebars.php:107
+msgid "Footer"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1099
+msgid "All layout and appearance settings for the footer."
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1105
+msgid "Custom Code"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1111
+msgid "Other"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1145
+msgid "Logo Image"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1146
+msgid "Max recommended height for the logo image is 86px."
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1154
+msgid "Retina Logo Image"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1155
+msgid "2x logo size, for screens with high DPI."
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1163
+msgid "Logo top margin"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1164
+msgid "In pixels."
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1180
+msgid "Header Background Image"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1186
+msgid "Header Background Repeat"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1193
+#: inc/customizer/class-customize-base.php:1432
+#: inc/customizer/class-customize-base.php:1621
+msgid "No Repeat"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1194
+#: inc/customizer/class-customize-base.php:1433
+#: inc/customizer/class-customize-base.php:1622
+msgid "Tile"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1195
+#: inc/customizer/class-customize-base.php:1434
+#: inc/customizer/class-customize-base.php:1623
+msgid "Tile Horizontally"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1196
+#: inc/customizer/class-customize-base.php:1435
+#: inc/customizer/class-customize-base.php:1624
+msgid "Tile Vertically"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1201
+msgid "Header Background Position"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1208
+#: inc/customizer/class-customize-base.php:1447
+#: inc/customizer/class-customize-base.php:1636
+#: inc/customizer/class-customize-base.php:1677
+msgid "Left"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1209
+#: inc/customizer/class-customize-base.php:1448
+#: inc/customizer/class-customize-base.php:1637
+msgid "Center"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1210
+#: inc/customizer/class-customize-base.php:1449
+#: inc/customizer/class-customize-base.php:1638
+#: inc/customizer/class-customize-base.php:1678
+msgid "Right"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1215
+msgid "Header Background Attachment"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1222
+#: inc/customizer/class-customize-base.php:1461
+#: inc/customizer/class-customize-base.php:1650
+msgid "Scroll"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1223
+#: inc/customizer/class-customize-base.php:1462
+#: inc/customizer/class-customize-base.php:1651
+msgid "Fixed"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1231
+msgid "Header background color"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1240
+msgid "Header widgets background color"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1249
+msgid "Header widgets text color"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1257
+msgid "Top bar visibility"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1258
+msgid "Show or hide?"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1261
+#: inc/customizer/class-customize-base.php:1491
+msgid "Show"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1262
+#: inc/customizer/class-customize-base.php:1492
+msgid "Hide"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1263
+msgid "Hide on Mobile"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1271
+msgid "Top bar background color"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1280
+msgid "Top bar text color"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1289
+msgid "Featured page"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1290
+msgid "To which page should the Featured Page button link to?"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1296
+msgid "Custom Button Text"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1305
+#: inc/widgets/widget-special-offer.php:216
+msgid "Custom URL"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1315
+msgid "Open link in a new window/tab."
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1326
+msgid "Main navigation link color"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1335
+msgid "Main navigation link hover color"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1344
+msgid "Main navigation submenu background"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1353
+msgid "Main navigation submenu link color"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1362
+msgid "Main navigation link color (mobile)"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1371
+msgid "Main navigation link hover color (mobile)"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1380
+msgid "Main navigation submenu link color (mobile)"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1389
+msgid "Main navigation submenu link hover color (mobile)"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1398
+msgid "Main navigation background color (mobile)"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1409
+msgid "Page Header background color"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1419
+msgid "Page Header Background Image"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1425
+msgid "Page Header Background Repeat"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1440
+msgid "Page Header Background Position"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1454
+msgid "Page Header Background Attachment"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1471
+msgid "Page Header title color"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1480
+msgid "Page Header subtitle color"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1487
+msgid "Show page title area"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1488
+msgid ""
+"This will hide the page title area on all pages. You can also hide "
+"individual page headers in page settings. To remove breadcrumbs from all "
+"pages, please deactivate the Breadcrumb NavXT plugin."
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1502
+msgid "Breadcrumbs text color"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1511
+msgid "Breadcrumbs hover text color"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1520
+msgid "Breadcrumbs active text color"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1529
+#: inc/widgets/widget-portfolio-grid.php:400
+msgid "Layout"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1532
+msgid "Wide"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1533
+msgid "Boxed"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1539
+msgid "Blog columns"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1540
+msgid "Number of columns on blog pages (blog, archives and search) on desktop."
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1554
+msgid "Text color"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1563
+msgid "Link color"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1572
+msgid "Headings color"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1581
+msgid "Primary color"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1590
+msgid "Dark button background color"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1599
+msgid "Light button background color"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1608
+msgid "Body background image"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1614
+msgid "Body background repeat"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1629
+msgid "Body background position"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1643
+msgid "Body background attachment"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1659
+msgid "Body background color"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1667
+msgid "Number of products per page"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1672
+msgid "Sidebar on single product page"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1676
+msgid "No sidebar"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1687
+msgid "Portfolio parent page"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1688
+msgid "Page with all the portfolio items."
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1694
+msgid "Portfolio slug"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1695
+msgid ""
+"This is used in the URL part. After changing this, you must save the "
+"permalink settings again in Settings &rarr; Permalinks."
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1700
+msgid "Number of columns in gallery"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1718
+msgid "Footer widgets layout"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1719
+msgid ""
+"Select number of widget you want in the footer and then with the slider "
+"rearrange the layout"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1734
+msgid "Footer background color"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1743
+msgid "Footer widget title color"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1753
+msgid "Footer text color"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1763
+msgid "Footer link color"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1773
+msgid "Footer bottom background color"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1783
+msgid "Footer bottom text color"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1793
+msgid "Footer bottom link color"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1801
+msgid "Footer bottom text on the left"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1802
+#: inc/customizer/class-customize-base.php:1810
+#: inc/customizer/class-customize-base.php:1818
+msgid "You can use HTML: a, span, i, em, strong, img."
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1809
+msgid "Footer bottom text on the center"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1817
+msgid "Footer bottom text on the right"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1825
+msgid "Custom CSS"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1826
+msgid "%s How to find CSS classes %s in the theme."
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1832
+msgid "Custom JavaScript (head)"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1833
+msgid ""
+"You have to include the &lt;script&gt;&lt;/script&gt; tags as well. Paste "
+"your Google Analytics tracking code here."
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1839
+msgid "Custom JavaScript (footer)"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1840
+msgid "You have to include the &lt;script&gt;&lt;/script&gt; tags as well."
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1847
+msgid "Show ACF admin panel?"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1848
+msgid ""
+"If you want to use ACF and need the ACF admin panel set this to "
+"<strong>Yes</strong>. Do not change if you do not know what you are doing."
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1851
+#: inc/customizer/class-customize-base.php:1860
+msgid "No"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1852
+#: inc/customizer/class-customize-base.php:1861
+msgid "Yes"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1857
+msgid "Use minified theme CSS"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:1866
+msgid "Character set for Google Fonts"
+msgstr ""
+
+#: inc/documentation-link.php:15 inc/documentation-link.php:16
+#: inc/documentation-link.php:31
+msgid "Documentation"
+msgstr ""
+
+#: inc/documentation-link.php:34
+msgid "Click here to see online documentation of the theme!"
+msgstr ""
+
+#: inc/filters.php:339
+msgid "Widget Style"
+msgstr ""
+
+#: inc/filters.php:341
+msgid "Set a box around the widget"
+msgstr ""
+
+#: inc/filters.php:515
+msgid "After import setup ended!"
+msgstr ""
+
+#: inc/filters.php:523
+msgid ""
+"Please try to manually import the demo data. Here are instructions on how "
+"to do that: %sDocumentation: Import XML File%s"
+msgstr ""
+
+#: inc/filters.php:577
+msgid "ProteusThemes Widgets"
+msgstr ""
+
+#: inc/filters.php:695
+msgid ""
+"Error: The coordinates are missing, please check this weather widget "
+"settings!"
+msgstr ""
+
+#: inc/gallery.php:21
+msgid "Default WP gallery"
+msgstr ""
+
+#: inc/gallery.php:22
+msgid "Adrenaline gallery"
+msgstr ""
+
+#: inc/gallery.php:23
+msgid "Adrenaline gallery (bigger first image)"
+msgstr ""
+
+#: inc/gallery.php:45
+msgid "Type"
+msgstr ""
+
+#: inc/helpers.php:36
+#. translators: %s represents a number
+msgid "%s Comment"
+msgid_plural "%s Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/helpers.php:200
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: inc/helpers.php:216
+msgid "Edit"
+msgstr ""
+
+#: inc/theme-sidebars.php:12
+msgid "Blog Sidebar"
+msgstr ""
+
+#: inc/theme-sidebars.php:14
+msgid "Sidebar on the blog layout."
+msgstr ""
+
+#: inc/theme-sidebars.php:26
+msgid "Regular Page Sidebar"
+msgstr ""
+
+#: inc/theme-sidebars.php:28
+msgid "Sidebar on the regular page."
+msgstr ""
+
+#: inc/theme-sidebars.php:42
+msgid "Top Left"
+msgstr ""
+
+#: inc/theme-sidebars.php:44
+msgid "Top left widget area for Icon Box, Social Icons, Custom Menu or Text widget."
+msgstr ""
+
+#: inc/theme-sidebars.php:53
+msgid "Top Right"
+msgstr ""
+
+#: inc/theme-sidebars.php:55
+msgid ""
+"Top right widget area for Icon Box, Social Icons, Custom Menu or Text "
+"widget."
+msgstr ""
+
+#: inc/theme-sidebars.php:65
+msgid "Header Left"
+msgstr ""
+
+#: inc/theme-sidebars.php:67
+msgid "Header left widget area for Icon Box, Social Icons, Search, or Text."
+msgstr ""
+
+#: inc/theme-sidebars.php:76
+msgid "Header Right"
+msgstr ""
+
+#: inc/theme-sidebars.php:78
+msgid "Header right widget area for Icon Box, Social Icons, Search, or Text."
+msgstr ""
+
+#: inc/theme-sidebars.php:88
+msgid "Shop Sidebar"
+msgstr ""
+
+#: inc/theme-sidebars.php:90
+msgid "Sidebar for the shop page"
+msgstr ""
+
+#: inc/theme-sidebars.php:109
+msgid ""
+"Footer area works best with %d widgets. This number can be changed in the "
+"Appearance &rarr; Customize &rarr; Theme Options &rarr; Footer."
+msgstr ""
+
+#: inc/widgets/widget-call-to-action.php:13
+msgid "Call to Action"
+msgstr ""
+
+#: inc/widgets/widget-call-to-action.php:14
+msgid "Call to Action widget for Page Builder."
+msgstr ""
+
+#: inc/widgets/widget-call-to-action.php:86
+#: inc/widgets/widget-instagram.php:150
+#: inc/widgets/widget-special-offer.php:183
+msgid "Title:"
+msgstr ""
+
+#: inc/widgets/widget-call-to-action.php:90
+msgid "Subtitle:"
+msgstr ""
+
+#: inc/widgets/widget-call-to-action.php:94
+msgid "Button Area:"
+msgstr ""
+
+#: inc/widgets/widget-call-to-action.php:97
+msgid ""
+"Input a button shortcode in the above field. Please take a look at the "
+"%1$sButtons Shortcode documentation%2$s to learn more on how to write "
+"button shortcodes."
+msgstr ""
+
+#: inc/widgets/widget-contact-profile.php:17
+msgid "Contact Profile"
+msgstr ""
+
+#: inc/widgets/widget-contact-profile.php:18
+msgid "Widget displaying contact info."
+msgstr ""
+
+#: inc/widgets/widget-contact-profile.php:99
+msgid "Picture of"
+msgstr ""
+
+#: inc/widgets/widget-contact-profile.php:196
+msgid "Name:"
+msgstr ""
+
+#: inc/widgets/widget-contact-profile.php:201
+#: inc/widgets/widget-special-offer.php:188
+msgid "Label:"
+msgstr ""
+
+#: inc/widgets/widget-contact-profile.php:206
+#: inc/widgets/widget-image-banner.php:117
+#: inc/widgets/widget-special-offer.php:198
+msgid "Picture URL:"
+msgstr ""
+
+#: inc/widgets/widget-contact-profile.php:208
+#: inc/widgets/widget-image-banner.php:119
+#: inc/widgets/widget-special-offer.php:200
+msgid "Upload Image"
+msgstr ""
+
+#: inc/widgets/widget-contact-profile.php:213
+msgid "Open social links in new tab"
+msgstr ""
+
+#: inc/widgets/widget-contact-profile.php:218
+msgid "Items:"
+msgstr ""
+
+#: inc/widgets/widget-contact-profile.php:222
+#: inc/widgets/widget-image-banner.php:101 inc/widgets/widget-instagram.php:154
+#: inc/widgets/widget-special-offer.php:263
+msgid "Text:"
+msgstr ""
+
+#: inc/widgets/widget-contact-profile.php:227
+#: inc/widgets/widget-instagram.php:162
+#: inc/widgets/widget-special-offer.php:268
+msgid "Select icon:"
+msgstr ""
+
+#: inc/widgets/widget-contact-profile.php:228
+#: inc/widgets/widget-contact-profile.php:259
+#: inc/widgets/widget-special-offer.php:269
+msgid "Click on the icon below or manually select from the %s website"
+msgstr ""
+
+#: inc/widgets/widget-contact-profile.php:237
+#: inc/widgets/widget-special-offer.php:278
+msgid "Remove item"
+msgstr ""
+
+#: inc/widgets/widget-contact-profile.php:243
+#: inc/widgets/widget-special-offer.php:284
+msgid "Add New Item"
+msgstr ""
+
+#: inc/widgets/widget-contact-profile.php:249
+msgid "Social Icons:"
+msgstr ""
+
+#: inc/widgets/widget-contact-profile.php:253
+#: inc/widgets/widget-image-banner.php:122 inc/widgets/widget-instagram.php:158
+msgid "Link:"
+msgstr ""
+
+#: inc/widgets/widget-contact-profile.php:258
+msgid "Select social icon:"
+msgstr ""
+
+#: inc/widgets/widget-contact-profile.php:268
+msgid "Remove social icon"
+msgstr ""
+
+#: inc/widgets/widget-contact-profile.php:274
+msgid "Add New Social Icon"
+msgstr ""
+
+#: inc/widgets/widget-featured-product.php:13
+msgid "Featured Product"
+msgstr ""
+
+#: inc/widgets/widget-featured-product.php:14
+msgid "Select a WooCommerce product and display it with some details."
+msgstr ""
+
+#: inc/widgets/widget-featured-product.php:62
+msgid ""
+"ProteusThemes - Featured Product widget: No product selected! Please select "
+"a WooCommerce product in the widget settings."
+msgstr ""
+
+#: inc/widgets/widget-featured-product.php:90
+msgid "Product:"
+msgstr ""
+
+#: inc/widgets/widget-featured-product.php:92
+msgid "-Select product-"
+msgstr ""
+
+#: inc/widgets/widget-image-banner.php:13
+msgid "Image Banner"
+msgstr ""
+
+#: inc/widgets/widget-image-banner.php:14
+msgid "Linkable banner with image background and custom text."
+msgstr ""
+
+#: inc/widgets/widget-image-banner.php:105
+msgid "Text color:"
+msgstr ""
+
+#: inc/widgets/widget-image-banner.php:109
+msgid "Text size:"
+msgstr ""
+
+#: inc/widgets/widget-image-banner.php:111
+msgid "Small"
+msgstr ""
+
+#: inc/widgets/widget-image-banner.php:112
+msgid "Normal"
+msgstr ""
+
+#: inc/widgets/widget-image-banner.php:113
+msgid "Big"
+msgstr ""
+
+#: inc/widgets/widget-image-banner.php:127
+msgid "Open link in new tab"
+msgstr ""
+
+#: inc/widgets/widget-instagram.php:15
+msgid "Instagram"
+msgstr ""
+
+#: inc/widgets/widget-instagram.php:16
+msgid "A row of images pulled from instagram for Page Builder."
+msgstr ""
+
+#: inc/widgets/widget-instagram.php:129
+msgid "Windget instructions:"
+msgstr ""
+
+#: inc/widgets/widget-instagram.php:131
+msgid "%sLogin and get your Instagram Access Token%s."
+msgstr ""
+
+#: inc/widgets/widget-instagram.php:132
+msgid ""
+"Once you complete the authentication steps, copy the Access Token to the "
+"field below."
+msgstr ""
+
+#: inc/widgets/widget-instagram.php:136
+msgid "Instagram access token:"
+msgstr ""
+
+#: inc/widgets/widget-instagram.php:141
+msgid "Number of Images:"
+msgstr ""
+
+#: inc/widgets/widget-instagram.php:146
+msgid "Show CTA box?"
+msgstr ""
+
+#: inc/widgets/widget-instagram.php:163
+msgid "Click on the icon below or manually select from the %s website."
+msgstr ""
+
+#: inc/widgets/widget-portfolio-grid.php:13
+msgid "Portfolio Grid"
+msgstr ""
+
+#: inc/widgets/widget-portfolio-grid.php:112
+#: inc/widgets-views/widget-person-profile.php:12
+#: template-parts/slick-carousel.php:20
+msgid "Previous"
+msgstr ""
+
+#: inc/widgets/widget-portfolio-grid.php:115
+#: inc/widgets-views/widget-person-profile.php:13
+#: template-parts/slick-carousel.php:21
+msgid "Next"
+msgstr ""
+
+#: inc/widgets/widget-portfolio-grid.php:225
+msgid "FILTER"
+msgstr ""
+
+#: inc/widgets/widget-portfolio-grid.php:380
+msgid "Post ID"
+msgstr ""
+
+#: inc/widgets/widget-portfolio-grid.php:381
+msgid "Title"
+msgstr ""
+
+#: inc/widgets/widget-portfolio-grid.php:382
+msgid "Date"
+msgstr ""
+
+#: inc/widgets/widget-portfolio-grid.php:383
+msgid "Last modified date"
+msgstr ""
+
+#: inc/widgets/widget-portfolio-grid.php:384
+msgid "Random order"
+msgstr ""
+
+#: inc/widgets/widget-portfolio-grid.php:390
+msgid "Widget title"
+msgstr ""
+
+#: inc/widgets/widget-portfolio-grid.php:395
+msgid "Label for all items"
+msgstr ""
+
+#: inc/widgets/widget-portfolio-grid.php:396
+msgid "All"
+msgstr ""
+
+#: inc/widgets/widget-portfolio-grid.php:402
+msgid "Display all the items in grid (4 in a row)"
+msgstr ""
+
+#: inc/widgets/widget-portfolio-grid.php:403
+msgid "Display only one row of items, with arrows to see more"
+msgstr ""
+
+#: inc/widgets/widget-portfolio-grid.php:409
+msgid "Maximum number of items"
+msgstr ""
+
+#: inc/widgets/widget-portfolio-grid.php:412
+msgid "Set -1 to show all."
+msgstr ""
+
+#: inc/widgets/widget-portfolio-grid.php:416
+msgid "Order items by"
+msgstr ""
+
+#: inc/widgets/widget-portfolio-grid.php:425
+msgid "Ascending"
+msgstr ""
+
+#: inc/widgets/widget-portfolio-grid.php:426
+msgid "Descending"
+msgstr ""
+
+#: inc/widgets/widget-portfolio-grid.php:431
+msgid "Filter by categories"
+msgstr ""
+
+#: inc/widgets/widget-portfolio-grid.php:446
+msgid "Add CTA (click to action) project."
+msgstr ""
+
+#: inc/widgets/widget-portfolio-grid.php:451
+msgid "CTA title"
+msgstr ""
+
+#: inc/widgets/widget-portfolio-grid.php:456
+msgid "CTA text"
+msgstr ""
+
+#: inc/widgets/widget-portfolio-grid.php:461
+msgid "CTA button"
+msgstr ""
+
+#: inc/widgets/widget-portfolio-grid.php:466
+msgid "CTA link"
+msgstr ""
+
+#: inc/widgets/widget-special-offer.php:16
+msgid "Special Offer"
+msgstr ""
+
+#: inc/widgets/widget-special-offer.php:17
+msgid "Display your special offer with important info."
+msgstr ""
+
+#: inc/widgets/widget-special-offer.php:113 single-portfolio.php:82
+msgid "Book Now"
+msgstr ""
+
+#: inc/widgets/widget-special-offer.php:193
+msgid "Price:"
+msgstr ""
+
+#: inc/widgets/widget-special-offer.php:204
+msgid "Description:"
+msgstr ""
+
+#: inc/widgets/widget-special-offer.php:209
+msgid "CTA button text:"
+msgstr ""
+
+#: inc/widgets/widget-special-offer.php:214
+msgid "CTA button type:"
+msgstr ""
+
+#: inc/widgets/widget-special-offer.php:217
+msgid "Link with WooCommerce product"
+msgstr ""
+
+#: inc/widgets/widget-special-offer.php:222
+msgid "CTA button URL:"
+msgstr ""
+
+#: inc/widgets/widget-special-offer.php:227
+msgid "CTA button product link:"
+msgstr ""
+
+#: inc/widgets/widget-special-offer.php:228
+msgid ""
+"Link a WooCommerce product to this CTA button. (Woocommerce plugin has to "
+"be active)."
+msgstr ""
+
+#: inc/widgets/widget-special-offer.php:231
+msgid "Select product"
+msgstr ""
+
+#: inc/widgets/widget-special-offer.php:248
+msgid "Woocommerce plugin has to be active, for this option!"
+msgstr ""
+
+#: inc/widgets/widget-special-offer.php:254
+msgid "Open CTA in new tab"
+msgstr ""
+
+#: inc/widgets/widget-special-offer.php:259
+msgid "Features:"
+msgstr ""
+
+#: inc/widgets/widget-weather/class-forecastio-api.php:105
+msgid "Error: No data was retrieved from the weather API."
+msgstr ""
+
+#: inc/widgets/widget-weather/class-forecastio-api.php:201
+msgid "Clear day"
+msgstr ""
+
+#: inc/widgets/widget-weather/class-forecastio-api.php:202
+msgid "Clear night"
+msgstr ""
+
+#: inc/widgets/widget-weather/class-forecastio-api.php:203
+msgid "Rain"
+msgstr ""
+
+#: inc/widgets/widget-weather/class-forecastio-api.php:204
+msgid "Snow"
+msgstr ""
+
+#: inc/widgets/widget-weather/class-forecastio-api.php:205
+msgid "Sleet"
+msgstr ""
+
+#: inc/widgets/widget-weather/class-forecastio-api.php:206
+msgid "Windy"
+msgstr ""
+
+#: inc/widgets/widget-weather/class-forecastio-api.php:207
+msgid "Fog"
+msgstr ""
+
+#: inc/widgets/widget-weather/class-forecastio-api.php:208
+msgid "Cloudy"
+msgstr ""
+
+#: inc/widgets/widget-weather/class-forecastio-api.php:209
+msgid "Hail"
+msgstr ""
+
+#: inc/widgets/widget-weather/class-forecastio-api.php:210
+msgid "Thunderstorm"
+msgstr ""
+
+#: inc/widgets/widget-weather/class-forecastio-api.php:211
+msgid "Tornado"
+msgstr ""
+
+#: inc/widgets/widget-weather/class-forecastio-api.php:212
+#: inc/widgets/widget-weather/class-forecastio-api.php:213
+msgid "Partly cloudy"
+msgstr ""
+
+#: inc/widgets/widget-weather/class-forecastio-api.php:222
+msgid "Mon"
+msgstr ""
+
+#: inc/widgets/widget-weather/class-forecastio-api.php:223
+msgid "Tue"
+msgstr ""
+
+#: inc/widgets/widget-weather/class-forecastio-api.php:224
+msgid "Wed"
+msgstr ""
+
+#: inc/widgets/widget-weather/class-forecastio-api.php:225
+msgid "Thu"
+msgstr ""
+
+#: inc/widgets/widget-weather/class-forecastio-api.php:226
+msgid "Fri"
+msgstr ""
+
+#: inc/widgets/widget-weather/class-forecastio-api.php:227
+msgid "Sat"
+msgstr ""
+
+#: inc/widgets/widget-weather/class-forecastio-api.php:228
+msgid "Sun"
+msgstr ""
+
+#: inc/widgets/widget-weather.php:13
+msgid "Weather"
+msgstr ""
+
+#: inc/widgets/widget-weather.php:14
+msgid "Weather widget for a given location."
+msgstr ""
+
+#: inc/widgets/widget-weather.php:112
+msgid "Widget instructions:"
+msgstr ""
+
+#: inc/widgets/widget-weather.php:114
+msgid "%sRegister at forecast.io and get your API key%s."
+msgstr ""
+
+#: inc/widgets/widget-weather.php:115
+msgid "Once you register, copy the API key to the field below."
+msgstr ""
+
+#: inc/widgets/widget-weather.php:119
+msgid "API key:"
+msgstr ""
+
+#: inc/widgets/widget-weather.php:124
+msgid "Location:"
+msgstr ""
+
+#: inc/widgets/widget-weather.php:129
+msgid "Location coordinates"
+msgstr ""
+
+#: inc/widgets/widget-weather.php:131
+msgid "Latitude:"
+msgstr ""
+
+#: inc/widgets/widget-weather.php:133
+msgid "Longitude:"
+msgstr ""
+
+#: inc/widgets/widget-weather.php:136
+msgid ""
+"%sGet the coordinates of your desired location here%s. Just copy/paste the "
+"latitude and longitude to the above fields."
+msgstr ""
+
+#: inc/widgets/widget-weather.php:139
+msgid "Forecast for:"
+msgstr ""
+
+#: inc/widgets/widget-weather.php:142
+msgid "Current day only"
+msgstr ""
+
+#: inc/widgets/widget-weather.php:143
+msgid "1 day"
+msgstr ""
+
+#: inc/widgets/widget-weather.php:144
+msgid "2 days"
+msgstr ""
+
+#: inc/widgets/widget-weather.php:145
+msgid "3 days"
+msgstr ""
+
+#: inc/widgets/widget-weather.php:146
+msgid "4 days"
+msgstr ""
+
+#: inc/widgets/widget-weather.php:147
+msgid "5 days"
+msgstr ""
+
+#: inc/widgets/widget-weather.php:148
+msgid "6 days"
+msgstr ""
+
+#: inc/widgets/widget-weather.php:149
+msgid "7 days"
+msgstr ""
+
+#: inc/widgets/widget-weather.php:153
+msgid "Measurement units:"
+msgstr ""
+
+#: inc/widgets/widget-weather.php:155
+msgid "Temperature unit:"
+msgstr ""
+
+#: inc/widgets/widget-weather.php:157
+msgid "Celsius"
+msgstr ""
+
+#: inc/widgets/widget-weather.php:158
+msgid "Fahrenheit"
+msgstr ""
+
+#: inc/widgets/widget-weather.php:160
+msgid "Wind unit:"
+msgstr ""
+
+#: inc/widgets/widget-weather.php:162
+msgid "m/s"
+msgstr ""
+
+#: inc/widgets/widget-weather.php:163
+msgid "km/s"
+msgstr ""
+
+#: inc/widgets/widget-weather.php:164
+msgid "knots"
+msgstr ""
+
+#: inc/widgets/widget-weather.php:165
+msgid "mph (miles per hour)"
+msgstr ""
+
+#: inc/widgets/widget-weather.php:169
+msgid "Link text:"
+msgstr ""
+
+#: inc/widgets/widget-weather.php:174
+msgid "Link url:"
+msgstr ""
+
+#: inc/widgets-views/widget-person-profile.php:69
+msgid "Social:"
+msgstr ""
+
+#: searchform.php:12
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:14
+msgid "Search"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:20
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:25
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:30
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:16 template-parts/content-single.php:28
+#. translators: after that comes pagination like 1, 2, 3 ... 10
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-search.php:29 template-parts/content-single.php:39
+#: template-parts/content.php:27
+msgid "By"
+msgstr ""
+
+#: template-parts/content-search.php:35 template-parts/content.php:36
+#: template-parts/content.php:41
+#. translators: %s: Name of current post
+msgid "Read more %s"
+msgstr ""
+
+#: template-parts/page-header.php:56
+msgid "Blog"
+msgstr ""
+
+#: template-parts/page-header.php:81
+msgid "Search Results For"
+msgstr ""
+
+#: template-parts/page-header.php:84
+msgid "Error 404"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Adrenaline PT"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://demo.proteusthemes.com/adrenaline/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Adrenaline is the world’s first WordPress theme made specifically for the "
+"water-sports industry. Whether it is for surf schools in Spain or diving "
+"classes in Bali, Adrenaline will have your visitors pumped and ready for an "
+"unforgettable trip to the ocean."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "ProteusThemes"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.proteusthemes.com/"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Front Page With Layer/Revolution Slider"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Front Page With Slider"
+msgstr ""
+
+#: comments.php:70
+msgctxt "noun"
+msgid "Your comment"
+msgstr ""
+
+#: functions.php:11
+msgctxt ""
+"%1$s - version ie. 5.4.0. %2$s, %3$s and %4$s  - html tags, must be "
+"included around the same words as original"
+msgid ""
+"This theme requires %2$sPHP 5.3.2+%3$s to run. Please contact your hosting "
+"company and ask them to update the PHP version of your site to at least PHP "
+"5.3.2.%4$s Your current version of PHP: %2$s%1$s%3$s"
+msgstr ""
+
+#: inc/filters.php:300
+#. translators: If there are characters in your language that are not supported
+#. by Roboto or Dosis, translate this to 'off'. Do not translate into your own
+#. language.
+msgctxt "Roboto Condensed and Dosis: on or off"
+msgid "on"
+msgstr ""
+
+#: inc/helpers.php:97
+#. translators: To add an additional character subset specific to your
+#. language, translate this to 'greek', 'cyrillic', 'devanagari' or
+#. 'vietnamese'. Do not translate into your own language.
+msgctxt "Add new subset (greek, cyrillic, devanagari, vietnamese)"
+msgid "no-subset"
+msgstr ""
+
+#: inc/widgets/widget-portfolio-grid.php:14
+msgctxt ""
+"%s represents a link to plugin: "
+"https://wordpress.org/plugins/portfolio-post-type/"
+msgid "Displays portfolio items from the %s plugin."
+msgstr ""

@@ -1,0 +1,41 @@
+/* 05.17. Social Icons */
+.header {
+	.social-icons {
+		&__link {
+			position: relative;
+			font-size: ptr(18);
+			color: $brand-secondary;
+			padding-right: ptr(15);
+			margin-right: ptr(12);
+
+			@include media-breakpoint-up(xl) {
+				padding-right: ptr(20);
+				margin-right: ptr(17);
+			}
+
+			&:focus,
+			&:hover {
+				color: $brand-primary;
+			}
+
+			&::after {
+				position: absolute;
+				content: '';
+				background-color: rgba(0, 0, 0, .1);
+				width: 1px;
+				height: ptr(30);
+				top: calc(50% - #{ptr(14)});
+				right: 0;
+			}
+
+			&:last-of-type {
+				padding-right: 0;
+				margin-right: 0;
+
+				&::after {
+					display: none;
+				}
+			}
+		}
+	}
+}

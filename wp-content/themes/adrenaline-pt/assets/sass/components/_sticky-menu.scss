@@ -1,0 +1,30 @@
+/* 05.16. Sticky Menu - theme specific details */
+.pt-sticky-menu {
+	&__logo {
+		a,
+		h1 {
+			color: #ffffff;
+			margin-bottom: 0;
+		}
+	}
+
+	.main-navigation {
+		margin-bottom: 0;
+
+		> .menu-item {
+			display: inline-block;
+
+			> a {
+				@include media-breakpoint-up(lg) {
+					padding-left: ptr(10);
+					padding-right: ptr(15);
+				}
+
+				@include media-breakpoint-up(xl) {
+					padding-left: ptr(24);
+					padding-right: ptr(28);
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,86 @@
+/* 05.12. Buttons */
+
+// scss-lint:disable ImportantRule
+
+.btn {
+	font-size: ptr(12);
+	text-transform: uppercase;
+	border-width: 2px;
+	border-radius: ptr(60);
+	transition: $primary-transition;
+
+	.fa {
+		font-size: ptr(16);
+		vertical-align: middle;
+		margin-right: ptr(7);
+	}
+
+	&-primary {
+		&:focus,
+		&:hover {
+			background-color: darken($brand-primary, 5);
+			border-color: darken($brand-primary, 5);
+		}
+	}
+
+	&-outline-primary {
+		background-color: transparent !important;
+
+		&:focus,
+		&:hover {
+			background-color: transparent !important;
+			color: darken($brand-primary, 5);
+		}
+	}
+
+	&-secondary {
+		background-color: $brand-secondary;
+		border-color: $brand-secondary;
+		color: #ffffff;
+
+		&:focus,
+		&:hover {
+			background-color: lighten($brand-secondary, 5);
+			border-color: lighten($brand-secondary, 5);
+			color: #ffffff;
+		}
+	}
+
+	&-outline-secondary {
+		background-color: transparent !important;
+		border: 2px solid $brand-secondary;
+		color: $brand-secondary;
+
+		&:focus,
+		&:hover {
+			background-color: transparent !important;
+			border-color: lighten($brand-secondary, 10);
+			color: lighten($brand-secondary, 10);
+		}
+	}
+
+	&-light {
+		background-color: #ffffff;
+		color: $gray-dark;
+		text-shadow: none;
+
+		&:focus,
+		&:hover {
+			background-color: darken(#ffffff, 5);
+			color: $gray-dark;
+		}
+	}
+
+	&-outline-light {
+		background-color: transparent !important;
+		border: 2px solid #ffffff;
+		color: #ffffff;
+
+		&:focus,
+		&:hover {
+			background-color: transparent !important;
+			border-color: darken(#ffffff, 5);
+			color: darken(#ffffff, 5);
+		}
+	}
+}

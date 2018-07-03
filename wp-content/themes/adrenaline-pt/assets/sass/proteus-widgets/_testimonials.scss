@@ -1,0 +1,93 @@
+/* 05.28. Testimonials */
+.testimonial {
+	position: relative;
+	text-align: center;
+	background-color: #ffffff;
+	border-radius: ptr(4);
+	padding: ptr(66) ptr(45) ptr(25);
+	margin-bottom: ptr(30);
+
+	@include media-breakpoint-up(md) {
+		margin-bottom: 0;
+	}
+
+	&::before {
+		position: absolute;
+		content: '“';
+		font-family: Georgia, "Times New Roman";
+		font-size: ptr(46);
+		line-height: ptr(64);
+		background-color: $brand-primary;
+		color: #ffffff;
+		border-bottom-left-radius: ptr(40);
+		border-bottom-right-radius: ptr(40);
+		width: ptr(40);
+		height: ptr(40);
+		top: 0;
+		left: calc(50% - #{ptr(20)});
+	}
+
+	&::after {
+		position: absolute;
+		content: '';
+		background-color: $brand-primary;
+		width: ptr(40);
+		height: ptr(5);
+		bottom: 0;
+		left: calc(50% - #{ptr(20)});
+	}
+
+	&__quote {
+		font-size: ptr(16);
+		margin-bottom: ptr(14);
+	}
+
+	&__author {
+		font-size: ptr(14);
+		font-style: normal;
+		text-transform: uppercase;
+	}
+
+	&__author-description {
+		font-size: ptr(14);
+	}
+
+	&__carousel {
+		position: relative;
+		display: inline-block;
+		font-size: ptr(20);
+		color: rgba(255, 255, 255, .5);
+		border: 2px solid #999999;
+		padding: ptr(13) ptr(18);
+
+		&:focus {
+			color: rgba(255, 255, 255, .5);
+		}
+
+		&:hover {
+			color: rgba(255, 255, 255, .9);
+		}
+
+		&-container {
+			font-size: 0;
+			text-align: center;
+			margin-top: ptr(30);
+		}
+
+		&--left {
+			border-top-left-radius: 50%;
+			border-bottom-left-radius: 50%;
+			right: -1px;
+			padding-left: ptr(20);
+			padding-right: ptr(16);
+		}
+
+		&--right {
+			border-top-right-radius: 50%;
+			border-bottom-right-radius: 50%;
+			left: -1px;
+			padding-right: ptr(20);
+			padding-left: ptr(16);
+		}
+	}
+}

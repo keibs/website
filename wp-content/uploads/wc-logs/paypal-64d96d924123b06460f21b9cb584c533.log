@@ -1,0 +1,938 @@
+08-01-2016 @ 16:33:30 - Subscription Request Parameters: Array
+(
+    [method] => POST
+    [uri] => https://api-3t.paypal.com/nvp
+    [user-agent] => WooCommerce-Subscriptions-PayPal/2.0.18 (WooCommerce/2.6.4; WordPress/4.5.3)
+    [headers] => Array
+        (
+        )
+
+    [body] => Array
+(
+    [USER] => *****************************
+    [PWD] => ****************
+    [SIGNATURE] => ********************************************************
+    [VERSION] => 124
+    [METHOD] => SetExpressCheckout
+    [L_BILLINGTYPE0] => MerchantInitiatedBillingSingleAgreement
+    [L_BILLINGAGREEMENTDESCRIPTION0] => Orders with Web Editor Board
+    [RETURNURL] => http://webeditorboard.com/wc-api/wcs_paypal/?action=reference_transaction_account_check
+    [CANCELURL] => http://webeditorboard.com/wc-api/wcs_paypal/?action=reference_transaction_account_check
+    [BRANDNAME] => Web Editor Board
+    [LANDINGPAGE] => Login
+    [NOSHIPPING] => 1
+    [MAXAMT] => 0.00
+)
+
+    [duration] => 0.82215s
+)
+
+08-01-2016 @ 16:33:30 - Subscription Request Response: Array
+(
+    [code] => 200
+    [message] => OK
+    [headers] => Array
+        (
+            [date] => Mon, 01 Aug 2016 20:33:30 GMT
+            [server] => Apache
+            [x-paypal-operation-name] => SetExpressCheckout
+            [x-paypal-api-rc] => 11452
+            [connection] => close
+            [cache-control] => Array
+                (
+                    [0] => max-age=0, no-cache, no-store, must-revalidate
+                    [1] => max-age=0, no-cache, no-store, must-revalidate
+                )
+
+            [pragma] => Array
+                (
+                    [0] => no-cache
+                    [1] => no-cache
+                )
+
+            [http_x_pp_az_locator] => slcb.slc
+            [paypal-debug-id] => 11ab5045779bb
+            [set-cookie] => Array
+                (
+                    [0] => X-PP-SILOVER=name%3DLIVE6.APIT.1%26silo_version%3D880%26app%3Dappdispatcher_apit%26TIME%3D447913815%26HTTP_X_PP_AZ_LOCATOR%3Dslcb.slc; Expires=Mon, 01 Aug 2016 21:03:30 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+                    [1] => X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+                )
+
+            [content-length] => 291
+            [content-type] => text/plain; charset=utf-8
+        )
+
+    [body] => Array
+(
+    [TIMESTAMP] => 2016-08-01T20:33:30Z
+    [CORRELATIONID] => 11ab5045779bb
+    [ACK] => Failure
+    [VERSION] => 124
+    [BUILD] => 000000
+    [L_ERRORCODE0] => 11452
+    [L_SHORTMESSAGE0] => Merchant not enabled for reference transactions
+    [L_LONGMESSAGE0] => Merchant not enabled for reference transactions
+    [L_SEVERITYCODE0] => Error
+)
+
+)
+
+08-02-2016 @ 10:47:57 - Generating payment form for order 1493. Notify URL: http://webeditorboard.com/wc-api/WC_Gateway_Paypal/
+08-02-2016 @ 10:47:57 - PayPal Request Args for order 1493: cmd=_xclick-subscriptions&business=webeditorboard%40gmail.com&no_note=1&currency_code=USD&charset=utf-8&rm=2&upload=1&return=http%3A%2F%2Fwebeditorboard.com%2Fcheckout%2Forder-received%2F1493%3Fkey%3Dwc_order_57a0b29d68160%26utm_nooverride%3D1&cancel_return=http%3A%2F%2Fwebeditorboard.com%2Fcart%2F%3Fcancel_order%3Dtrue%26order%3Dwc_order_57a0b29d68160%26order_id%3D1493%26redirect&page_style=&paymentaction=sale&bn=WooThemes_Cart&invoice=WEB-1493&custom=%7B%22order_id%22%3A1493%2C%22order_key%22%3A%22wc_order_57a0b29d68160%22%2C%22subscription_id%22%3A1494%2C%22subscription_key%22%3A%22wc_order_57a0b29d83661%22%7D&notify_url=http%3A%2F%2Fwebeditorboard.com%2Fwc-api%2FWC_Gateway_Paypal%2F&first_name=yacouba&last_name=Keita&company=keiteck&address1=3289+saville+st&address2=&city=Atlanta&state=GA&zip=30331&country=US&email=webeditorboard%40gmail.com&night_phone_a=229&night_phone_b=815&night_phone_c=9606&day_phone_a=229&day_phone_b=815&day_phone_c=9606&no_shipping=1&tax_cart=0.60&item_name_1=Baby+Plan+%28+Customer+Information+++First+name%3A+yacouba%2C+%0ACustomer+Information+++Last+name%3A+keita%2C+%0AEmail+Address%3A+yacoubandk...&quantity_1=1&amount_1=14.99&item_number_1=&item_name=Subscription+1494+%28Order+1493%29+-+Baby+Plan&a3=15.59&p3=1&t3=M&src=1&sra=0
+08-03-2016 @ 10:56:00 - Subscription Request Parameters: Array
+(
+    [method] => POST
+    [uri] => https://api-3t.paypal.com/nvp
+    [user-agent] => WooCommerce-Subscriptions-PayPal/2.0.18 (WooCommerce/2.6.4; WordPress/4.5.3)
+    [headers] => Array
+        (
+        )
+
+    [body] => Array
+(
+    [USER] => *****************************
+    [PWD] => ****************
+    [SIGNATURE] => ********************************************************
+    [VERSION] => 124
+    [METHOD] => SetExpressCheckout
+    [L_BILLINGTYPE0] => MerchantInitiatedBillingSingleAgreement
+    [L_BILLINGAGREEMENTDESCRIPTION0] => Orders with Web Editor Board
+    [RETURNURL] => http://webeditorboard.com/wc-api/wcs_paypal/?action=reference_transaction_account_check
+    [CANCELURL] => http://webeditorboard.com/wc-api/wcs_paypal/?action=reference_transaction_account_check
+    [BRANDNAME] => Web Editor Board
+    [LANDINGPAGE] => Login
+    [NOSHIPPING] => 1
+    [MAXAMT] => 0.00
+)
+
+    [duration] => 0.59627s
+)
+
+08-03-2016 @ 10:56:00 - Subscription Request Response: Array
+(
+    [code] => 200
+    [message] => OK
+    [headers] => Array
+        (
+            [date] => Wed, 03 Aug 2016 14:56:00 GMT
+            [server] => Apache
+            [x-paypal-operation-name] => SetExpressCheckout
+            [x-paypal-api-rc] => 11452
+            [connection] => close
+            [cache-control] => Array
+                (
+                    [0] => max-age=0, no-cache, no-store, must-revalidate
+                    [1] => max-age=0, no-cache, no-store, must-revalidate
+                )
+
+            [pragma] => Array
+                (
+                    [0] => no-cache
+                    [1] => no-cache
+                )
+
+            [http_x_pp_az_locator] => slcb.slc
+            [paypal-debug-id] => 35c14d4616893
+            [set-cookie] => Array
+                (
+                    [0] => X-PP-SILOVER=name%3DLIVE3.APIT.1%26silo_version%3D880%26app%3Dappdispatcher_apit%26TIME%3D434775%26HTTP_X_PP_AZ_LOCATOR%3Dslcb.slc; Expires=Wed, 03 Aug 2016 15:26:00 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+                    [1] => X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+                )
+
+            [content-length] => 291
+            [content-type] => text/plain; charset=utf-8
+        )
+
+    [body] => Array
+(
+    [TIMESTAMP] => 2016-08-03T14:56:00Z
+    [CORRELATIONID] => 35c14d4616893
+    [ACK] => Failure
+    [VERSION] => 124
+    [BUILD] => 000000
+    [L_ERRORCODE0] => 11452
+    [L_SHORTMESSAGE0] => Merchant not enabled for reference transactions
+    [L_LONGMESSAGE0] => Merchant not enabled for reference transactions
+    [L_SEVERITYCODE0] => Error
+)
+
+)
+
+08-07-2016 @ 18:09:11 - Subscription Request Parameters: Array
+(
+    [method] => POST
+    [uri] => https://api-3t.paypal.com/nvp
+    [user-agent] => WooCommerce-Subscriptions-PayPal/2.0.18 (WooCommerce/2.6.4; WordPress/4.5.3)
+    [headers] => Array
+        (
+        )
+
+    [body] => Array
+(
+    [USER] => *****************************
+    [PWD] => ****************
+    [SIGNATURE] => ********************************************************
+    [VERSION] => 124
+    [METHOD] => SetExpressCheckout
+    [L_BILLINGTYPE0] => MerchantInitiatedBillingSingleAgreement
+    [L_BILLINGAGREEMENTDESCRIPTION0] => Orders with Web Editor Board
+    [RETURNURL] => http://webeditorboard.com/wc-api/wcs_paypal/?action=reference_transaction_account_check
+    [CANCELURL] => http://webeditorboard.com/wc-api/wcs_paypal/?action=reference_transaction_account_check
+    [BRANDNAME] => Web Editor Board
+    [LANDINGPAGE] => Login
+    [NOSHIPPING] => 1
+    [MAXAMT] => 0.00
+)
+
+    [duration] => 0.7367s
+)
+
+08-07-2016 @ 18:09:11 - Subscription Request Response: Array
+(
+    [code] => 200
+    [message] => OK
+    [headers] => Array
+        (
+            [date] => Sun, 07 Aug 2016 22:09:11 GMT
+            [server] => Apache
+            [x-paypal-operation-name] => SetExpressCheckout
+            [x-paypal-api-rc] => 11452
+            [connection] => close
+            [cache-control] => Array
+                (
+                    [0] => max-age=0, no-cache, no-store, must-revalidate
+                    [1] => max-age=0, no-cache, no-store, must-revalidate
+                )
+
+            [pragma] => Array
+                (
+                    [0] => no-cache
+                    [1] => no-cache
+                )
+
+            [http_x_pp_az_locator] => dcg11.slc
+            [paypal-debug-id] => d0850349761e2
+            [set-cookie] => Array
+                (
+                    [0] => X-PP-SILOVER=name%3DLIVE3.APIT.1%26silo_version%3D880%26app%3Dappdispatcher_apit%26TIME%3D2276566871%26HTTP_X_PP_AZ_LOCATOR%3Ddcg11.slc; Expires=Sun, 07 Aug 2016 22:39:11 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+                    [1] => X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+                )
+
+            [content-length] => 291
+            [content-type] => text/plain; charset=utf-8
+        )
+
+    [body] => Array
+(
+    [TIMESTAMP] => 2016-08-07T22:09:11Z
+    [CORRELATIONID] => d0850349761e2
+    [ACK] => Failure
+    [VERSION] => 124
+    [BUILD] => 000000
+    [L_ERRORCODE0] => 11452
+    [L_SHORTMESSAGE0] => Merchant not enabled for reference transactions
+    [L_LONGMESSAGE0] => Merchant not enabled for reference transactions
+    [L_SEVERITYCODE0] => Error
+)
+
+)
+
+08-20-2016 @ 21:24:44 - Subscription Request Parameters: Array
+(
+    [method] => POST
+    [uri] => https://api-3t.paypal.com/nvp
+    [user-agent] => WooCommerce-Subscriptions-PayPal/2.0.18 (WooCommerce/2.6.4; WordPress/4.6)
+    [headers] => Array
+        (
+        )
+
+    [body] => Array
+(
+    [USER] => *****************************
+    [PWD] => ****************
+    [SIGNATURE] => ********************************************************
+    [VERSION] => 124
+    [METHOD] => SetExpressCheckout
+    [L_BILLINGTYPE0] => MerchantInitiatedBillingSingleAgreement
+    [L_BILLINGAGREEMENTDESCRIPTION0] => Orders with Web Editor Board
+    [RETURNURL] => http://webeditorboard.com/wc-api/wcs_paypal/?action=reference_transaction_account_check
+    [CANCELURL] => http://webeditorboard.com/wc-api/wcs_paypal/?action=reference_transaction_account_check
+    [BRANDNAME] => Web Editor Board
+    [LANDINGPAGE] => Login
+    [NOSHIPPING] => 1
+    [MAXAMT] => 0.00
+)
+
+    [duration] => 0.57306s
+)
+
+08-20-2016 @ 21:24:44 - Subscription Request Response: Array
+(
+    [code] => 200
+    [message] => OK
+    [headers] => Requests_Utility_CaseInsensitiveDictionary Object
+        (
+            [data:protected] => Array
+                (
+                    [date] => Sun, 21 Aug 2016 01:24:44 GMT
+                    [server] => Apache
+                    [x-paypal-operation-name] => SetExpressCheckout
+                    [x-paypal-api-rc] => 11452
+                    [http_x_pp_az_locator] => dcg12.slc
+                    [paypal-debug-id] => 20f607a518b86
+                    [set-cookie] => Array
+                        (
+                            [0] => X-PP-SILOVER=name%3DLIVE3.APIT.1%26silo_version%3D880%26app%3Dappdispatcher_apit%26TIME%3D3691166039%26HTTP_X_PP_AZ_LOCATOR%3Ddcg12.slc; Expires=Sun, 21 Aug 2016 01:54:44 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+                            [1] => X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+                        )
+
+                    [content-length] => 293
+                    [cache-control] => max-age=0, no-cache, no-store, must-revalidate
+                    [pragma] => no-cache
+                    [content-type] => text/plain; charset=utf-8
+                )
+
+        )
+
+    [body] => Array
+(
+    [TIMESTAMP] => 2016-08-21T01:24:44Z
+    [CORRELATIONID] => 20f607a518b86
+    [ACK] => Failure
+    [VERSION] => 124
+    [BUILD] => 24604018
+    [L_ERRORCODE0] => 11452
+    [L_SHORTMESSAGE0] => Merchant not enabled for reference transactions
+    [L_LONGMESSAGE0] => Merchant not enabled for reference transactions
+    [L_SEVERITYCODE0] => Error
+)
+
+)
+
+09-05-2016 @ 05:32:47 - Subscription Request Parameters: Array
+(
+    [method] => POST
+    [uri] => https://api-3t.paypal.com/nvp
+    [user-agent] => WooCommerce-Subscriptions-PayPal/2.0.18 (WooCommerce/2.6.4; WordPress/4.6)
+    [headers] => Array
+        (
+        )
+
+    [body] => Array
+(
+    [USER] => *****************************
+    [PWD] => ****************
+    [SIGNATURE] => ********************************************************
+    [VERSION] => 124
+    [METHOD] => SetExpressCheckout
+    [L_BILLINGTYPE0] => MerchantInitiatedBillingSingleAgreement
+    [L_BILLINGAGREEMENTDESCRIPTION0] => Orders with Web Editor Board
+    [RETURNURL] => https://webeditorboard.com/wc-api/wcs_paypal/?action=reference_transaction_account_check
+    [CANCELURL] => https://webeditorboard.com/wc-api/wcs_paypal/?action=reference_transaction_account_check
+    [BRANDNAME] => Web Editor Board
+    [LANDINGPAGE] => Login
+    [NOSHIPPING] => 1
+    [MAXAMT] => 0.00
+)
+
+    [duration] => 2.20602s
+)
+
+09-05-2016 @ 05:32:47 - Subscription Request Response: Array
+(
+    [code] => 200
+    [message] => OK
+    [headers] => Requests_Utility_CaseInsensitiveDictionary Object
+        (
+            [data:protected] => Array
+                (
+                    [date] => Mon, 05 Sep 2016 09:32:46 GMT
+                    [server] => Apache
+                    [x-paypal-operation-name] => SetExpressCheckout
+                    [x-paypal-api-rc] => 11452
+                    [cache-control] => Array
+                        (
+                            [0] => max-age=0, no-cache, no-store, must-revalidate
+                            [1] => max-age=0, no-cache, no-store, must-revalidate
+                        )
+
+                    [pragma] => Array
+                        (
+                            [0] => no-cache
+                            [1] => no-cache
+                        )
+
+                    [http_x_pp_az_locator] => dcg11.slc
+                    [paypal-debug-id] => 573418c3a2ee2
+                    [set-cookie] => Array
+                        (
+                            [0] => X-PP-SILOVER=name%3DLIVE5.APIT.1%26silo_version%3D880%26app%3Dappdispatcher_apit%26TIME%3D3191590231%26HTTP_X_PP_AZ_LOCATOR%3Ddcg11.slc; Expires=Mon, 05 Sep 2016 10:02:46 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+                            [1] => X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+                        )
+
+                    [content-length] => 293
+                    [content-type] => text/plain; charset=utf-8
+                )
+
+        )
+
+    [body] => Array
+(
+    [TIMESTAMP] => 2016-09-05T09:32:46Z
+    [CORRELATIONID] => 573418c3a2ee2
+    [ACK] => Failure
+    [VERSION] => 124
+    [BUILD] => 24765677
+    [L_ERRORCODE0] => 11452
+    [L_SHORTMESSAGE0] => Merchant not enabled for reference transactions
+    [L_LONGMESSAGE0] => Merchant not enabled for reference transactions
+    [L_SEVERITYCODE0] => Error
+)
+
+)
+
+10-05-2016 @ 04:40:06 - Subscription Request Parameters: Array
+(
+    [method] => POST
+    [uri] => https://api-3t.paypal.com/nvp
+    [user-agent] => WooCommerce-Subscriptions-PayPal/2.0.18 (WooCommerce/2.6.4; WordPress/4.6.1)
+    [headers] => Array
+        (
+        )
+
+    [body] => Array
+(
+    [USER] => *****************************
+    [PWD] => ****************
+    [SIGNATURE] => ********************************************************
+    [VERSION] => 124
+    [METHOD] => SetExpressCheckout
+    [L_BILLINGTYPE0] => MerchantInitiatedBillingSingleAgreement
+    [L_BILLINGAGREEMENTDESCRIPTION0] => Orders with Atlanta Website and Graphic Design
+    [RETURNURL] => https://webeditorboard.com/wc-api/wcs_paypal/?action=reference_transaction_account_check
+    [CANCELURL] => https://webeditorboard.com/wc-api/wcs_paypal/?action=reference_transaction_account_check
+    [BRANDNAME] => Atlanta Website and Graphic Design
+    [LANDINGPAGE] => Login
+    [NOSHIPPING] => 1
+    [MAXAMT] => 0.00
+)
+
+    [duration] => 0.69152s
+)
+
+10-05-2016 @ 04:40:06 - Subscription Request Response: Array
+(
+    [code] => 200
+    [message] => OK
+    [headers] => Requests_Utility_CaseInsensitiveDictionary Object
+        (
+            [data:protected] => Array
+                (
+                    [date] => Wed, 05 Oct 2016 08:40:06 GMT
+                    [server] => Apache
+                    [x-slr-retry-api] => SetExpressCheckout
+                    [x-paypal-operation-name] => SetExpressCheckout
+                    [x-paypal-api-rc] => 11452
+                    [cache-control] => Array
+                        (
+                            [0] => max-age=0, no-cache, no-store, must-revalidate
+                            [1] => max-age=0, no-cache, no-store, must-revalidate
+                        )
+
+                    [pragma] => Array
+                        (
+                            [0] => no-cache
+                            [1] => no-cache
+                        )
+
+                    [http_x_pp_az_locator] => dcg11.slc
+                    [paypal-debug-id] => 6e063073997db
+                    [set-cookie] => Array
+                        (
+                            [0] => X-PP-SILOVER=name%3DLIVE3.APIT.1%26silo_version%3D880%26app%3Dappdispatcher_apit%26TIME%3D1723659351%26HTTP_X_PP_AZ_LOCATOR%3Ddcg11.slc; Expires=Wed, 05 Oct 2016 09:10:06 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+                            [1] => X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+                        )
+
+                    [content-length] => 291
+                    [content-type] => text/plain; charset=utf-8
+                )
+
+        )
+
+    [body] => Array
+(
+    [TIMESTAMP] => 2016-10-05T08:40:06Z
+    [CORRELATIONID] => 6e063073997db
+    [ACK] => Failure
+    [VERSION] => 124
+    [BUILD] => 000000
+    [L_ERRORCODE0] => 11452
+    [L_SHORTMESSAGE0] => Merchant not enabled for reference transactions
+    [L_LONGMESSAGE0] => Merchant not enabled for reference transactions
+    [L_SEVERITYCODE0] => Error
+)
+
+)
+
+10-12-2016 @ 12:00:41 - Subscription Request Parameters: Array
+(
+    [method] => POST
+    [uri] => https://api-3t.paypal.com/nvp
+    [user-agent] => WooCommerce-Subscriptions-PayPal/2.0.18 (WooCommerce/2.6.4; WordPress/4.6.1)
+    [headers] => Array
+        (
+        )
+
+    [body] => Array
+(
+    [USER] => *****************************
+    [PWD] => ****************
+    [SIGNATURE] => ********************************************************
+    [VERSION] => 124
+    [METHOD] => SetExpressCheckout
+    [L_BILLINGTYPE0] => MerchantInitiatedBillingSingleAgreement
+    [L_BILLINGAGREEMENTDESCRIPTION0] => Orders with Atlanta Website and Graphic Design
+    [RETURNURL] => https://webeditorboard.com/wc-api/wcs_paypal/?action=reference_transaction_account_check
+    [CANCELURL] => https://webeditorboard.com/wc-api/wcs_paypal/?action=reference_transaction_account_check
+    [BRANDNAME] => Atlanta Website and Graphic Design
+    [LANDINGPAGE] => Login
+    [NOSHIPPING] => 1
+    [MAXAMT] => 0.00
+)
+
+    [duration] => 0.60189s
+)
+
+10-12-2016 @ 12:00:41 - Subscription Request Response: Array
+(
+    [code] => 200
+    [message] => OK
+    [headers] => Requests_Utility_CaseInsensitiveDictionary Object
+        (
+            [data:protected] => Array
+                (
+                    [date] => Wed, 12 Oct 2016 16:00:41 GMT
+                    [server] => Apache
+                    [x-slr-retry-api] => SetExpressCheckout
+                    [x-paypal-operation-name] => SetExpressCheckout
+                    [x-paypal-api-rc] => 11452
+                    [x-pad] => avoid browser bug
+                    [http_x_pp_az_locator] => dcg12.slc
+                    [paypal-debug-id] => a5b845fb65deb
+                    [set-cookie] => Array
+                        (
+                            [0] => X-PP-SILOVER=name%3DLIVE6.APIT.1%26silo_version%3D880%26app%3Dappdispatcher_apit%26TIME%3D694091351%26HTTP_X_PP_AZ_LOCATOR%3Ddcg12.slc; Expires=Wed, 12 Oct 2016 16:30:41 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+                            [1] => X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+                        )
+
+                    [content-length] => 293
+                    [cache-control] => max-age=0, no-cache, no-store, must-revalidate
+                    [pragma] => no-cache
+                    [content-type] => text/plain; charset=utf-8
+                )
+
+        )
+
+    [body] => Array
+(
+    [TIMESTAMP] => 2016-10-12T16:00:41Z
+    [CORRELATIONID] => a5b845fb65deb
+    [ACK] => Failure
+    [VERSION] => 124
+    [BUILD] => 26106709
+    [L_ERRORCODE0] => 11452
+    [L_SHORTMESSAGE0] => Merchant not enabled for reference transactions
+    [L_LONGMESSAGE0] => Merchant not enabled for reference transactions
+    [L_SEVERITYCODE0] => Error
+)
+
+)
+
+10-31-2016 @ 12:11:07 - Subscription Request Parameters: Array
+(
+    [method] => POST
+    [uri] => https://api-3t.paypal.com/nvp
+    [user-agent] => WooCommerce-Subscriptions-PayPal/2.0.18 (WooCommerce/2.6.7; WordPress/4.6.1)
+    [headers] => Array
+        (
+        )
+
+    [body] => Array
+(
+    [USER] => *****************************
+    [PWD] => ****************
+    [SIGNATURE] => ********************************************************
+    [VERSION] => 124
+    [METHOD] => SetExpressCheckout
+    [L_BILLINGTYPE0] => MerchantInitiatedBillingSingleAgreement
+    [L_BILLINGAGREEMENTDESCRIPTION0] => Orders with Atlanta Graphic and Website Design
+    [RETURNURL] => https://webeditorboard.com/wc-api/wcs_paypal/?action=reference_transaction_account_check
+    [CANCELURL] => https://webeditorboard.com/wc-api/wcs_paypal/?action=reference_transaction_account_check
+    [BRANDNAME] => Atlanta Graphic and Website Design
+    [LANDINGPAGE] => Login
+    [NOSHIPPING] => 1
+    [MAXAMT] => 0.00
+)
+
+    [duration] => 0.76886s
+)
+
+10-31-2016 @ 12:11:07 - Subscription Request Response: Array
+(
+    [code] => 200
+    [message] => OK
+    [headers] => Requests_Utility_CaseInsensitiveDictionary Object
+        (
+            [data:protected] => Array
+                (
+                    [date] => Mon, 31 Oct 2016 16:11:06 GMT
+                    [server] => Apache
+                    [x-slr-retry-api] => SetExpressCheckout
+                    [x-paypal-operation-name] => SetExpressCheckout
+                    [x-paypal-api-rc] => 11452
+                    [cache-control] => Array
+                        (
+                            [0] => max-age=0, no-cache, no-store, must-revalidate
+                            [1] => max-age=0, no-cache, no-store, must-revalidate
+                        )
+
+                    [pragma] => Array
+                        (
+                            [0] => no-cache
+                            [1] => no-cache
+                        )
+
+                    [http_x_pp_az_locator] => dcg11.slc
+                    [paypal-debug-id] => 2aa69319ef56a
+                    [set-cookie] => Array
+                        (
+                            [0] => X-PP-SILOVER=name%3DLIVE6.APIT.1%26silo_version%3D880%26app%3Dappdispatcher_apit%26TIME%3D443357016%26HTTP_X_PP_AZ_LOCATOR%3Ddcg11.slc; Expires=Mon, 31 Oct 2016 16:41:07 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+                            [1] => X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+                        )
+
+                    [content-length] => 293
+                    [content-type] => text/plain; charset=utf-8
+                )
+
+        )
+
+    [body] => Array
+(
+    [TIMESTAMP] => 2016-10-31T16:11:07Z
+    [CORRELATIONID] => 2aa69319ef56a
+    [ACK] => Failure
+    [VERSION] => 124
+    [BUILD] => 26593028
+    [L_ERRORCODE0] => 11452
+    [L_SHORTMESSAGE0] => Merchant not enabled for reference transactions
+    [L_LONGMESSAGE0] => Merchant not enabled for reference transactions
+    [L_SEVERITYCODE0] => Error
+)
+
+)
+
+11-05-2016 @ 17:05:44 - Subscription Request Parameters: Array
+(
+    [method] => POST
+    [uri] => https://api-3t.paypal.com/nvp
+    [user-agent] => WooCommerce-Subscriptions-PayPal/2.0.18 (WooCommerce/2.6.7; WordPress/4.6.1)
+    [headers] => Array
+        (
+        )
+
+    [body] => Array
+(
+    [USER] => *****************************
+    [PWD] => ****************
+    [SIGNATURE] => ********************************************************
+    [VERSION] => 124
+    [METHOD] => SetExpressCheckout
+    [L_BILLINGTYPE0] => MerchantInitiatedBillingSingleAgreement
+    [L_BILLINGAGREEMENTDESCRIPTION0] => Orders with Atlanta Graphic and Website Design
+    [RETURNURL] => https://webeditorboard.com/wc-api/wcs_paypal/?action=reference_transaction_account_check
+    [CANCELURL] => https://webeditorboard.com/wc-api/wcs_paypal/?action=reference_transaction_account_check
+    [BRANDNAME] => Atlanta Graphic and Website Design
+    [LANDINGPAGE] => Login
+    [NOSHIPPING] => 1
+    [MAXAMT] => 0.00
+)
+
+    [duration] => 0.6813s
+)
+
+11-05-2016 @ 17:05:44 - Subscription Request Response: Array
+(
+    [code] => 200
+    [message] => OK
+    [headers] => Requests_Utility_CaseInsensitiveDictionary Object
+        (
+            [data:protected] => Array
+                (
+                    [date] => Sat, 05 Nov 2016 21:05:44 GMT
+                    [server] => Apache
+                    [x-slr-retry-api] => SetExpressCheckout
+                    [x-paypal-operation-name] => SetExpressCheckout
+                    [x-paypal-api-rc] => 11452
+                    [x-pad] => avoid browser bug
+                    [http_x_pp_az_locator] => dcg12.slc
+                    [paypal-debug-id] => 911deeeb7633f
+                    [set-cookie] => Array
+                        (
+                            [0] => X-PP-SILOVER=name%3DLIVE5.APIT.1%26silo_version%3D880%26app%3Dappdispatcher_apit%26TIME%3D2823364184%26HTTP_X_PP_AZ_LOCATOR%3Ddcg12.slc; Expires=Sat, 05 Nov 2016 21:35:44 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+                            [1] => X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+                        )
+
+                    [content-length] => 293
+                    [cache-control] => max-age=0, no-cache, no-store, must-revalidate
+                    [pragma] => no-cache
+                    [content-type] => text/plain; charset=utf-8
+                )
+
+        )
+
+    [body] => Array
+(
+    [TIMESTAMP] => 2016-11-05T21:05:44Z
+    [CORRELATIONID] => 911deeeb7633f
+    [ACK] => Failure
+    [VERSION] => 124
+    [BUILD] => 26755900
+    [L_ERRORCODE0] => 11452
+    [L_SHORTMESSAGE0] => Merchant not enabled for reference transactions
+    [L_LONGMESSAGE0] => Merchant not enabled for reference transactions
+    [L_SEVERITYCODE0] => Error
+)
+
+)
+
+12-07-2016 @ 15:03:52 - Subscription Request Parameters: Array
+(
+    [method] => POST
+    [uri] => https://api-3t.paypal.com/nvp
+    [user-agent] => WooCommerce-Subscriptions-PayPal/2.0.18 (WooCommerce/2.6.8; WordPress/4.7)
+    [headers] => Array
+        (
+        )
+
+    [body] => Array
+(
+    [USER] => *****************************
+    [PWD] => ****************
+    [SIGNATURE] => ********************************************************
+    [VERSION] => 124
+    [METHOD] => SetExpressCheckout
+    [L_BILLINGTYPE0] => MerchantInitiatedBillingSingleAgreement
+    [L_BILLINGAGREEMENTDESCRIPTION0] => Orders with KEIBS
+    [RETURNURL] => https://keibs.com/wc-api/wcs_paypal/?action=reference_transaction_account_check
+    [CANCELURL] => https://keibs.com/wc-api/wcs_paypal/?action=reference_transaction_account_check
+    [BRANDNAME] => KEIBS
+    [LANDINGPAGE] => Login
+    [NOSHIPPING] => 1
+    [MAXAMT] => 0.00
+)
+
+    [duration] => 0.79448s
+)
+
+12-07-2016 @ 15:03:52 - Subscription Request Response: Array
+(
+    [code] => 200
+    [message] => OK
+    [headers] => Requests_Utility_CaseInsensitiveDictionary Object
+        (
+            [data:protected] => Array
+                (
+                    [date] => Wed, 07 Dec 2016 19:03:51 GMT
+                    [server] => Apache
+                    [x-slr-retry-api] => SetExpressCheckout
+                    [x-paypal-operation-name] => SetExpressCheckout
+                    [x-paypal-api-rc] => 11452
+                    [x-pad] => avoid browser bug
+                    [http_x_pp_az_locator] => dcg12.slc
+                    [paypal-debug-id] => e34ebd7ccd02f
+                    [set-cookie] => Array
+                        (
+                            [0] => X-PP-SILOVER=name%3DLIVE5.APIT.1%26silo_version%3D880%26app%3Dappdispatcher_apit%26TIME%3D391989336%26HTTP_X_PP_AZ_LOCATOR%3Ddcg12.slc; Expires=Wed, 07 Dec 2016 19:33:52 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+                            [1] => X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+                        )
+
+                    [content-length] => 291
+                    [cache-control] => max-age=0, no-cache, no-store, must-revalidate
+                    [pragma] => no-cache
+                    [content-type] => text/plain; charset=utf-8
+                )
+
+        )
+
+    [body] => Array
+(
+    [TIMESTAMP] => 2016-12-07T19:03:52Z
+    [CORRELATIONID] => e34ebd7ccd02f
+    [ACK] => Failure
+    [VERSION] => 124
+    [BUILD] => 000000
+    [L_ERRORCODE0] => 11452
+    [L_SHORTMESSAGE0] => Merchant not enabled for reference transactions
+    [L_LONGMESSAGE0] => Merchant not enabled for reference transactions
+    [L_SEVERITYCODE0] => Error
+)
+
+)
+
+03-24-2017 @ 16:25:05 - Subscription Request Parameters: Array
+(
+    [method] => POST
+    [uri] => https://api-3t.paypal.com/nvp
+    [user-agent] => WooCommerce-Subscriptions-PayPal/2.0.18 (WooCommerce/2.6.14; WordPress/4.7.3)
+    [headers] => Array
+        (
+        )
+
+    [body] => Array
+(
+    [USER] => *****************************
+    [PWD] => ****************
+    [SIGNATURE] => ********************************************************
+    [VERSION] => 124
+    [METHOD] => SetExpressCheckout
+    [L_BILLINGTYPE0] => MerchantInitiatedBillingSingleAgreement
+    [L_BILLINGAGREEMENTDESCRIPTION0] => Orders with KEIBS LLC
+    [RETURNURL] => https://keibs.com/wc-api/wcs_paypal/?action=reference_transaction_account_check
+    [CANCELURL] => https://keibs.com/wc-api/wcs_paypal/?action=reference_transaction_account_check
+    [BRANDNAME] => KEIBS LLC
+    [LANDINGPAGE] => Login
+    [NOSHIPPING] => 1
+    [MAXAMT] => 0.00
+)
+
+    [duration] => 0.52558s
+)
+
+03-24-2017 @ 16:25:05 - Subscription Request Response: Array
+(
+    [code] => 200
+    [message] => OK
+    [headers] => Requests_Utility_CaseInsensitiveDictionary Object
+        (
+            [data:protected] => Array
+                (
+                    [date] => Fri, 24 Mar 2017 20:25:05 GMT
+                    [server] => Apache
+                    [x-slr-retry-api] => SetExpressCheckout
+                    [x-paypal-operation-name] => SetExpressCheckout
+                    [x-paypal-api-rc] => 11452
+                    [cache-control] => Array
+                        (
+                            [0] => max-age=0, no-cache, no-store, must-revalidate
+                            [1] => max-age=0, no-cache, no-store, must-revalidate
+                        )
+
+                    [pragma] => Array
+                        (
+                            [0] => no-cache
+                            [1] => no-cache
+                        )
+
+                    [http_x_pp_az_locator] => dcg11.slc
+                    [paypal-debug-id] => e049fda8725e
+                    [set-cookie] => Array
+                        (
+                            [0] => X-PP-SILOVER=name%3DLIVE5.APIT.1%26silo_version%3D880%26app%3Dappdispatcher_apit%26TIME%3D2709575000%26HTTP_X_PP_AZ_LOCATOR%3Ddcg11.slc; Expires=Fri, 24 Mar 2017 20:55:05 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+                            [1] => X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+                        )
+
+                    [content-length] => 292
+                    [content-type] => text/plain; charset=utf-8
+                )
+
+        )
+
+    [body] => Array
+(
+    [TIMESTAMP] => 2017-03-24T20:25:05Z
+    [CORRELATIONID] => e049fda8725e
+    [ACK] => Failure
+    [VERSION] => 124
+    [BUILD] => 31426570
+    [L_ERRORCODE0] => 11452
+    [L_SHORTMESSAGE0] => Merchant not enabled for reference transactions
+    [L_LONGMESSAGE0] => Merchant not enabled for reference transactions
+    [L_SEVERITYCODE0] => Error
+)
+
+)
+
+03-25-2017 @ 17:14:44 - Subscription Request Parameters: Array
+(
+    [method] => POST
+    [uri] => https://api-3t.paypal.com/nvp
+    [user-agent] => WooCommerce-Subscriptions-PayPal/2.0.18 (WooCommerce/2.6.14; WordPress/4.7.3)
+    [headers] => Array
+        (
+        )
+
+    [body] => Array
+(
+    [USER] => *****************************
+    [PWD] => ****************
+    [SIGNATURE] => ********************************************************
+    [VERSION] => 124
+    [METHOD] => SetExpressCheckout
+    [L_BILLINGTYPE0] => MerchantInitiatedBillingSingleAgreement
+    [L_BILLINGAGREEMENTDESCRIPTION0] => Orders with KEIBS LLC
+    [RETURNURL] => https://keibs.com/wc-api/wcs_paypal/?action=reference_transaction_account_check
+    [CANCELURL] => https://keibs.com/wc-api/wcs_paypal/?action=reference_transaction_account_check
+    [BRANDNAME] => KEIBS LLC
+    [LANDINGPAGE] => Login
+    [NOSHIPPING] => 1
+    [MAXAMT] => 0.00
+)
+
+    [duration] => 0.72411s
+)
+
+03-25-2017 @ 17:14:44 - Subscription Request Response: Array
+(
+    [code] => 200
+    [message] => OK
+    [headers] => Requests_Utility_CaseInsensitiveDictionary Object
+        (
+            [data:protected] => Array
+                (
+                    [date] => Sat, 25 Mar 2017 21:14:43 GMT
+                    [server] => Apache
+                    [x-slr-retry-api] => SetExpressCheckout
+                    [x-paypal-operation-name] => SetExpressCheckout
+                    [x-paypal-api-rc] => 11452
+                    [x-pad] => avoid browser bug
+                    [http_x_pp_az_locator] => dcg12.slc
+                    [paypal-debug-id] => 547ac736ad8eb
+                    [set-cookie] => Array
+                        (
+                            [0] => X-PP-SILOVER=name%3DLIVE6.APIT.1%26silo_version%3D880%26app%3Dappdispatcher_apit%26TIME%3D3286095448%26HTTP_X_PP_AZ_LOCATOR%3Ddcg12.slc; Expires=Sat, 25 Mar 2017 21:44:44 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+                            [1] => X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+                        )
+
+                    [content-length] => 293
+                    [cache-control] => max-age=0, no-cache, no-store, must-revalidate
+                    [pragma] => no-cache
+                    [content-type] => text/plain; charset=utf-8
+                )
+
+        )
+
+    [body] => Array
+(
+    [TIMESTAMP] => 2017-03-25T21:14:44Z
+    [CORRELATIONID] => 547ac736ad8eb
+    [ACK] => Failure
+    [VERSION] => 124
+    [BUILD] => 31426570
+    [L_ERRORCODE0] => 11452
+    [L_SHORTMESSAGE0] => Merchant not enabled for reference transactions
+    [L_LONGMESSAGE0] => Merchant not enabled for reference transactions
+    [L_SEVERITYCODE0] => Error
+)
+
+)
+

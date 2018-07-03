@@ -1,0 +1,343 @@
+/* 05.11. Slider */
+.pt-slick-carousel {
+	position: relative;
+
+	// Set these widths and heights, so that the loading process of the slider looks better.
+	@include media-breakpoint-up(lg) {
+		width: 100%;
+		height: ptr(580);
+	}
+
+	@media (min-width: 1400px) {
+		height: ptr(680);
+	}
+
+	&__slides {
+
+		// Hide the slider by default. It will be displayed once the slider initializes (with JS).
+		display: none;
+
+		&--no-captions {
+			+ .pt-slick-carousel__container {
+				.pt-slick-carousel__navigation-container {
+					position: absolute;
+					right: 0;
+				}
+			}
+		}
+	}
+
+	&__container {
+		@include media-breakpoint-up(lg) {
+			position: absolute;
+			display: flex;
+			align-items: center;
+			background-image: radial-gradient(transparent 50%, rgba(0, 0, 0, .5));
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+		}
+	}
+
+	&__label {
+		font-size: ptr(12);
+		font-weight: bold;
+		text-transform: uppercase;
+		text-align: center;
+
+		@include media-breakpoint-up(lg) {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: rgba(255, 255, 255, .9);
+			white-space: nowrap;
+			width: ptr(60);
+			transform: rotate(-90deg);
+		}
+
+		&-container {
+			background-color: $gray-lightest;
+			border-bottom: 1px dashed rgba(0, 0, 0, .2);
+			padding: ptr(23) ptr(20);
+
+			@include media-breakpoint-up(lg) {
+				position: absolute;
+				z-index: 10;
+				display: flex;
+				align-items: center;
+				background-color: transparent;
+				border-bottom: 0;
+				border-right: 1px dashed rgba(255, 255, 255, .5);
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 60px;
+				padding: ptr(20) 0;
+				overflow: hidden;
+				transform: translate3d(0, 0, 0);
+			}
+		}
+	}
+
+	&__content {
+		margin: 0 auto;
+
+		@include media-breakpoint-up(lg) {
+			width: calc(100% - #{ptr(60)});
+		}
+
+		@include media-breakpoint-up(xl) {
+			width: ptr(500);
+		}
+
+		@media (min-width: 1500px) {
+			width: ptr(625);
+		}
+
+		&-container {
+			@include media-breakpoint-up(lg) {
+				flex: 1 1 auto;
+				font-size: ptr(16);
+				color: #ffffff;
+				text-align: center;
+			}
+		}
+
+		&.is-in-transition {
+			.pt-slick-carousel__content-title {
+				@include media-breakpoint-up(lg) {
+					opacity: 0;
+					transform: translateY(60px);
+					transition: none;
+				}
+			}
+
+			.pt-slick-carousel__content-description {
+				@include media-breakpoint-up(lg) {
+					opacity: 0;
+					transform: translateY(60px);
+					transition: none;
+				}
+			}
+		}
+
+		&-title {
+			font-size: ptr(30);
+			font-weight: 800;
+			line-height: 1.2;
+			color: $brand-secondary;
+			margin-top: ptr(38);
+			margin-bottom: ptr(10);
+
+			@include media-breakpoint-up(lg) {
+				font-size: ptr(60);
+				color: #ffffff;
+				margin-top: 0;
+				text-shadow: 0 2px 6px rgba(0, 0, 0, .3);
+				transition: all 200ms ease-out;
+			}
+		}
+
+		&-description {
+			margin-bottom: ptr(38);
+
+			@include media-breakpoint-up(lg) {
+				margin-bottom: 0;
+				text-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+				transition: all 200ms ease-out;
+				transition-delay: 200ms;
+			}
+
+			p {
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+
+			.btn {
+				margin-right: ptr(5);
+			}
+		}
+	}
+
+	&__navigation {
+		@include media-breakpoint-up(lg) {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			white-space: nowrap;
+			width: ptr(60);
+			transform: rotate(90deg);
+		}
+
+		&-container {
+			@include media-breakpoint-up(lg) {
+				position: absolute;
+				z-index: 10;
+				display: flex;
+				align-items: center;
+				border-left: 1px dashed rgba(255, 255, 255, .5);
+				height: 100%;
+				width: ptr(60);
+				top: 0;
+				right: 0;
+				transform: translate3d(0, 0, 0);
+			}
+		}
+
+		.slick-dots {
+			display: none;
+
+			@include media-breakpoint-up(lg) {
+				@include list-unstyled;
+				display: flex;
+				order: 1;
+				margin-bottom: 0;
+				margin-right: ptr(10);
+			}
+
+			li {
+				@include media-breakpoint-up(lg) {
+					display: inline-block;
+					background-color: rgba(255, 255, 255, .5);
+					border-radius: ptr(2);
+					width: ptr(8);
+					height: ptr(8);
+					margin-right: ptr(10);
+					cursor: pointer;
+				}
+
+				&:focus {
+					@include media-breakpoint-up(lg) {
+						background-color: rgba(255, 255, 255, .5);
+					}
+				}
+
+				&:hover,
+				&.slick-active {
+					@include media-breakpoint-up(lg) {
+						background-color: rgba(255, 255, 255, .9);
+					}
+				}
+
+				button {
+					@include media-breakpoint-up(lg) {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+
+	&__slide-number {
+		display: none;
+
+		@include media-breakpoint-up(lg) {
+			display: block;
+			order: 2;
+			font-size: ptr(12);
+			font-weight: bold;
+			color: rgba(255, 255, 255, .9);
+			margin-right: ptr(19);
+		}
+	}
+
+	.slick-arrow {
+		position: absolute;
+		z-index: 10;
+		font-size: ptr(30);
+		background-color: transparent;
+		color: rgba(255, 255, 255, .5);
+		border: 0;
+		border-top: 1px dashed rgba(255, 255, 255, .5);
+		width: 50%;
+		bottom: 0;
+		padding: ptr(10) 0;
+		cursor: pointer;
+
+		@include media-breakpoint-up(lg) {
+			position: relative;
+			border-top: 0;
+			width: auto;
+			padding: 0;
+		}
+
+		&:focus {
+			outline: 0;
+			color: rgba(255, 255, 255, .5);
+		}
+
+		&:hover {
+			color: rgba(255, 255, 255, .9);
+		}
+
+		&.slick-prev {
+			left: 0;
+
+			@include media-breakpoint-up(lg) {
+				margin-right: ptr(10);
+				order: 3;
+				left: inherit;
+			}
+		}
+
+		&.slick-next {
+			right: 0;
+			border-left: 1px dashed rgba(255, 255, 255, .5);
+
+			@include media-breakpoint-up(lg) {
+				border-left: 0;
+				order: 4;
+				right: inherit;
+			}
+		}
+	}
+
+	.slick-vertical {
+		.slick-slide {
+			border: 0;
+		}
+	}
+
+	.carousel-item {
+		position: relative;
+
+		&__video-link {
+			&:hover {
+				outline: 0;
+			}
+		}
+
+		&__video-button {
+			position: absolute;
+			background: url('assets/images/play_icon.svg') no-repeat center center;
+			background-size: 10%;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+		}
+
+		&__slide-image {
+			@include media-breakpoint-up(lg) {
+				object-fit: cover;
+				width: 100%;
+				height: ptr(580);
+			}
+
+			@media (min-width: 1400px) {
+				height: ptr(680);
+			}
+		}
+
+		&.compat-object-fit {
+			background-size: cover;
+			background-position: center center;
+
+			.carousel-item__slide-image {
+				opacity: 0;
+			}
+		}
+	}
+}

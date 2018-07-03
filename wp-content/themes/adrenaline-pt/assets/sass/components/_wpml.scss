@@ -1,0 +1,49 @@
+/* WPML Language Switcher */
+.wpml-ls {
+	text-align: left;
+
+	@include media-breakpoint-down(md) {
+		width: 100%;
+	}
+
+	a {
+		color: $gray;
+		font-weight: bold;
+		padding: 10px 15px;
+	}
+
+	.wpml-ls-item-toggle {
+		background-color: transparent;
+		border: 3px solid #cccccc;
+		border-radius: 3px;
+		padding-top: ptr(14);
+		padding-bottom: ptr(14);
+
+		&::after {
+			color: $brand-primary;
+		}
+	}
+
+	.wpml-ls-sub-menu {
+		top: calc(100% - 2px);
+
+		li {
+			&:last-of-type {
+				a {
+					border-bottom-left-radius: 3px;
+					border-bottom-right-radius: 3px;
+				}
+			}
+		}
+
+		a {
+			background-color: #cccccc;
+			padding: 10px 20px;
+		}
+	}
+
+	&-flag {
+		margin-right: 5px;
+		padding-bottom: 2px;
+	}
+}

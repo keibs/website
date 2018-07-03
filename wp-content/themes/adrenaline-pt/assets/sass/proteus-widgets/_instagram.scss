@@ -1,0 +1,109 @@
+/* 05.32. Instagram */
+.pw-instagram {
+	display: flex;
+	flex-flow: row wrap;
+
+	@include media-breakpoint-up(md) {
+		flex-flow: row nowrap;
+	}
+
+	&__item {
+		display: block;
+		opacity: .5;
+		flex-basis: calc(50% - #{ptr(4)});
+		margin: ptr(2);
+		transition: transform 200ms ease-out, filter 200ms ease-out;
+		will-change: transform;
+
+		@include media-breakpoint-up(md) {
+			flex-basis: auto;
+		}
+
+		&:hover {
+			opacity: 1;
+			z-index: 10;
+			transform: scale(1.1, 1.1);
+
+			.pw-instagram__photo {
+				filter: grayscale(0);
+				will-change: transform;
+			}
+		}
+
+		&--cta {
+			position: relative;
+			background-color: $brand-secondary;
+			border-radius: 4px;
+			filter: none;
+			opacity: 1;
+
+			.pw-instagram__photo { // fix for the size of the CTA element
+				visibility: hidden;
+
+				@include media-breakpoint-up(xl) {
+					display: none;
+				}
+			}
+
+			&:focus,
+			&:hover {
+				text-decoration: none;
+			}
+
+			.fa {
+				position: absolute;
+				font-size: ptr(30);
+				color: #ffffff;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+
+				@include media-breakpoint-up(xl) {
+					left: ptr(20);
+					top: inherit;
+					bottom: ptr(15);
+					transform: inherit;
+				}
+			}
+		}
+	}
+
+	&__photo {
+		opacity: 1;
+		width: 100%;
+		border-radius: 4px;
+		filter: grayscale(100%);
+		transition: filter 200ms ease-out;
+		will-change: transform;
+	}
+
+	&__title {
+		display: none;
+
+		@include media-breakpoint-up(xl) {
+			display: block;
+			font-size: ptr(15);
+			text-transform: uppercase;
+			color: #ffffff;
+			padding: ptr(15) ptr(20) 0;
+		}
+	}
+
+	&__text {
+		display: none;
+
+		@include media-breakpoint-up(xl) {
+			display: block;
+			font-size: ptr(14);
+			color: rgba(255, 255, 255, .5);
+			padding: 0 ptr(20);
+		}
+	}
+
+	// Loader/spinner.
+	&__loader {
+		display: inline-block;
+		text-align: center;
+		width: 100%;
+	}
+}

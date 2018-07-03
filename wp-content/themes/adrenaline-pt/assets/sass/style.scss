@@ -1,0 +1,299 @@
+/*!
+Theme Name: Adrenaline PT
+Theme URI: https://demo.proteusthemes.com/adrenaline/
+Author: ProteusThemes
+Author URI: https://www.proteusthemes.com/
+Description: Adrenaline is a WordPress theme for businesses which make heart beats race. Whether it is bungee jumping, paintballing, rock climbing or kayaking - we all love the exhilaration of facing our fears. This theme is the perfect way to show the world the adventure they crave.
+Version: 0.0.0-tmp
+License: GPL 2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns, three-columns, left-sidebar, right-sidebar, grid-layout, custom-background, custom-colors, custom-menu, featured-images, footer-widgets, full-width-template, microformats, sticky-post, theme-options, threaded-comments, translation-ready, blog, e-commerce, entertainment, holiday
+Text domain: adrenaline-pt
+*/
+
+/*
+ TABLE OF CONTENTS
+	01. Project variables............Imported variables
+	02. Twitter Bootstrap............Remove what is not neccessary
+	03. Tags.........................Like <body>, <h1> etc.
+	04. Helpers and utility classes..The general styles like .push-down-15 etc.
+	05. Components...................Imported files, like partials, Compass etc.
+		05.01. Header
+		05.02. Page Header
+		05.03. Page Header Single
+		05.04. Page Header Portfolio
+		05.05. Breadcrumbs
+		05.06. Sidebar
+		05.07. Footer
+		05.08. Error 404
+		05.09. Boxed Container
+		05.10. Main Navigation
+		05.11. Slider
+		05.12. Buttons
+		05.13. Header Info
+		05.14. Contact Form 7
+		05.15. Modal
+		05.16. Sticky Menu
+		05.17. Social Icons
+		05.18. Icon Box
+		05.19. Featured Page
+		05.20. Call to Action
+		05.21. Number Counter
+		05.22. Brochure Box
+		05.23. Accordion
+		05.24. Skype Button
+		05.25. Weather
+		05.26. Pricing Table
+		05.27. Pricing List
+		05.28. Testimonials
+		05.29. Opening Time
+		05.30. Special Offer
+		05.31. Person Profile
+		05.32. Instagram
+		05.33. Portfolio Grid
+		05.34. Special Title
+		05.35. Image Banner
+		05.36. Latest Posts
+		05.37. Timetable
+		05.38. Logo Panel
+		05.39. Article
+		05.40. Pagination
+		05.41. WordPress Specific
+		05.42. WordPress Widgets
+		05.43. Comments
+		05.44. Post Navigation
+*/
+
+/*------------------------------------*\
+	01. Project variables
+
+	only visible in SASS source files
+\*------------------------------------*/
+
+@import 'vars';
+
+/*------------------------------------*\
+	02. Twitter Bootstrap
+
+	Remove what is not necessary
+\*------------------------------------*/
+
+// Core variables and mixins
+@import 'variables';
+@import 'mixins';
+
+// // Reset and dependencies
+@import 'normalize';
+@import 'print';
+
+// Core CSS
+@import 'reboot';
+@import 'type';
+@import 'images';
+@import 'code';
+@import 'grid';
+@import 'tables';
+@import 'forms';
+@import 'buttons';
+
+// // Components
+@import 'animation';
+// @import 'dropdown';
+// @import 'button-group';
+// @import 'input-group';
+// @import 'custom-forms';
+// @import 'nav';
+@import 'navbar';
+@import 'card';
+// @import 'breadcrumb';
+// @import 'pagination';
+// @import 'pager';
+// @import 'labels';
+// @import 'jumbotron';
+// @import 'alert';
+// @import 'progress';
+// @import 'media';
+// @import 'list-group';
+// @import 'close';
+@import 'responsive-embed';
+
+// Components w/ JavaScript
+@import 'modal';
+// @import 'tooltip';
+// @import 'popover';
+@import 'carousel';
+
+// Utility classes
+@import 'utilities';
+
+/*------------------------------------*\
+	03. Tags
+\*------------------------------------*/
+
+html {
+	font-size: 16px;
+
+	@include media-breakpoint-up(lg) {
+		font-size: 18px;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	letter-spacing: ptr(-.2);
+}
+
+/*------------------------------------*\
+	04. Helpers and very general classes
+\*------------------------------------*/
+
+.screen-reader-text {
+	// scss-lint:disable PlaceholderInExtend
+	@extend .sr-only;
+}
+
+.content-area {
+	margin-bottom: ptr(60);
+
+	img,
+	.featherlight-image {
+		border-radius: 4px;
+	}
+}
+
+.site-main {
+	&--left {
+		@include media-breakpoint-up(lg) {
+			padding-left: ptr(45);
+		}
+	}
+
+	&--right {
+		@include media-breakpoint-up(lg) {
+			padding-right: ptr(45);
+		}
+	}
+}
+
+.form-control {
+	font-size: ptr(16);
+	border: 2px solid #dddddd;
+	border-radius: 4px;
+	transition: $primary-transition;
+
+	&:hover {
+		border: 2px solid #bbbbbb;
+	}
+
+	&:focus {
+		border: 2px solid $gray-dark;
+	}
+}
+
+.featured-widget {
+	padding: ptr(30);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, .05), 0 2px 6px rgba(0, 0, 0, .15);
+	background-color: #ffffff;
+}
+
+.more-link {
+	text-transform: uppercase;
+	font-size: ptr(14);
+	font-weight: 800;
+
+	&:focus,
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.hr {
+	&--dashed {
+		border: 1px dashed rgba(0, 0, 0, .13);
+	}
+}
+
+.alternative-slider {
+	margin-bottom: ptr(60);
+}
+
+// fix for non-interactive areas below the .special-title in SO PB
+.panel-grid {
+	position: relative;
+}
+
+/*------------------------------------*\
+	05. Components
+\*------------------------------------*/
+
+// Layout
+@import 'components/header';
+@import 'components/page-header';
+@import 'components/page-header-single';
+@import 'components/page-header-portfolio';
+@import 'components/breadcrumbs';
+@import 'components/sidebar';
+@import 'components/footer';
+@import 'components/error-404';
+@import 'components/boxed-container';
+
+// Elements
+@import 'components/main-navigation';
+@import 'components/slider';
+@import 'components/buttons';
+@import 'components/header-info';
+@import 'components/contact-form-7';
+@import 'components/modal';
+@import 'components/sticky-menu';
+@import 'components/wpml';
+
+// Proteus Widgets
+@import 'proteus-widgets/social-icons';
+@import 'proteus-widgets/icon-box';
+@import 'proteus-widgets/featured-page';
+@import 'proteus-widgets/call-to-action';
+@import 'proteus-widgets/number-counter';
+@import 'proteus-widgets/brochure-box';
+@import 'proteus-widgets/accordion';
+@import 'proteus-widgets/skype-button';
+@import 'proteus-widgets/weather';
+@import 'proteus-widgets/pricing-table';
+@import 'proteus-widgets/pricing-list';
+@import 'proteus-widgets/testimonials';
+@import 'proteus-widgets/opening-time';
+@import 'proteus-widgets/special-offer';
+@import 'proteus-widgets/person-profile';
+@import 'proteus-widgets/instagram';
+@import 'proteus-widgets/portfolio-grid';
+@import 'proteus-widgets/special-title';
+@import 'proteus-widgets/image-banner';
+@import 'proteus-widgets/latest-posts';
+@import 'proteus-widgets/timetable';
+@import 'proteus-widgets/logo-panel';
+
+// WordPress Specific
+@import 'components/article';
+@import 'components/pagination';
+@import 'components/wp';
+@import 'components/wp-widgets';
+@import 'components/comments';
+@import 'components/post-navigation';
+
+// Fonts
+@import '../../bower_components/font-awesome/scss/font-awesome';
+
+// Sticky Menu.
+@import '../../vendor/proteusthemes/sticky-menu/assets/scss/sticky-menu-minimal';
+
+// Slick Carousel
+@import 'slick.scss';
+
+/*------------------------------------*\
+	The End :)
+\*------------------------------------*/
+
+/*# sourceMappingURL=style.css.map */

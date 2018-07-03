@@ -1,0 +1,82 @@
+/* 05.19. Featured Page */
+.page-box {
+	position: relative;
+
+	&__picture {
+		display: inline-block;
+		margin-bottom: ptr(15);
+		border-radius: 4px;
+		mask-image: radial-gradient(circle, #ffffff 100%, #000000 100%);
+
+		img {
+			width: 100%;
+			transform: scale(1);
+			mask-image: radial-gradient(circle, #ffffff 100%, #000000 100%);
+			transition: all 300ms ease-out;
+		}
+	}
+
+	&__title {
+		font-size: ptr(24);
+		margin-bottom: ptr(11);
+
+		a {
+			color: $brand-secondary;
+
+			&:focus,
+			&:hover {
+				color: $brand-secondary;
+			}
+		}
+	}
+
+	&__text {
+		font-size: ptr(16);
+		margin-bottom: 0;
+	}
+
+	&__content {
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	&__more-link {
+		display: inline-block;
+		font-size: ptr(14);
+		font-weight: 800;
+		text-transform: uppercase;
+		margin-top: ptr(10);
+	}
+
+	&--block {
+		.page-box__picture {
+			overflow: hidden;
+
+			&:focus,
+			&:hover {
+				img {
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
+
+	&--inline {
+		display: flex;
+		justify-content: space-between;
+
+		.page-box__picture {
+			display: inline-block;
+			margin: 0;
+		}
+
+		.page-box__title {
+			font-size: ptr(18);
+			margin-bottom: ptr(7);
+		}
+
+		.page-box__content {
+			flex-basis: calc(100% - 120px);
+		}
+	}
+}

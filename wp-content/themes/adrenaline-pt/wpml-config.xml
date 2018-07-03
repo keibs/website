@@ -1,0 +1,25 @@
+<wpml-config>
+	<custom-types>
+		<custom-type translate="1">portfolio</custom-type>
+	</custom-types>
+	<taxonomies>
+		<taxonomy translate="1">portfolio_category</taxonomy>
+		<taxonomy translate="1">portfolio_tag</taxonomy>
+	</taxonomies>
+	<admin-texts>
+		<key name="theme_mods_adrenaline-pt">
+			<key name="charset_setting" />
+			<key name="logo_img" />
+			<key name="logo2x_img" />
+			<key name="portfolio_parent_page" />
+			<key name="portfolio_slug" />
+			<key name="footer_logo_img" />
+			<key name="footer_logo2x_img" />
+			<key name="footer_custom_text" />
+			<key name="footer_bottom_left_txt" />
+			<key name="footer_bottom_middle_left_txt" />
+			<key name="footer_bottom_middle_right_txt" />
+			<key name="footer_bottom_right_txt" />
+		</key>
+	</admin-texts>
+</wpml-config>

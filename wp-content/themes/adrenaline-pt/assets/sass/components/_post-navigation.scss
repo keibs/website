@@ -1,0 +1,78 @@
+/* 05.44. Post Navigation */
+.post-navigation {
+	position: relative;
+	flex: 1;
+
+	&:focus,
+	&:hover {
+		text-decoration: none;
+
+		.post-navigation__title {
+			text-decoration: underline;
+		}
+	}
+
+	&::before {
+		position: absolute;
+		font-family: 'FontAwesome';
+		font-size: ptr(30);
+		line-height: 1;
+		top: ptr(8);
+		color: $brand-secondary;
+	}
+
+	&--next {
+		padding-right: ptr(60);
+
+		@include media-breakpoint-up(sm) {
+			text-align: right;
+			padding-left: ptr(30);
+		}
+
+		&::before {
+			content: '\f178';
+			right: 0;
+		}
+	}
+
+	&--previous {
+		padding-left: ptr(60);
+		margin-bottom: ptr(30);
+
+		@include media-breakpoint-up(sm) {
+			padding-right: ptr(30);
+			margin-bottom: 0;
+		}
+
+		&::before {
+			content: '\f177';
+			left: 0;
+		}
+	}
+
+	&__container {
+		display: flex;
+		flex-flow: column nowrap;
+		border-top: 1px dashed #cccccc;
+		margin-top: ptr(60);
+		padding-top: ptr(39);
+
+		@include media-breakpoint-up(sm) {
+			flex-flow: row nowrap;
+			justify-content: space-between;
+		}
+	}
+
+	&__text {
+		font-size: ptr(14);
+		font-weight: 800;
+		text-transform: uppercase;
+		color: $gray;
+	}
+
+	&__title {
+		font-size: ptr(18);
+		font-weight: 800;
+		color: $brand-secondary;
+	}
+}

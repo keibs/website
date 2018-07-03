@@ -1,0 +1,195 @@
+/* 05.31. Person Profile */
+.person-profile {
+	background-color: $gray-lightest;
+	border: 0;
+	border-radius: 4px;
+	margin-bottom: 0;
+
+	&:focus,
+	&:hover {
+		.slick-arrow {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+
+	&__image {
+		.person-profile & {
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+	}
+
+	&__container {
+		padding: ptr(25) ptr(30) ptr(19);
+	}
+
+	&__name {
+		display: inline-block;
+		font-size: ptr(24);
+		margin-bottom: ptr(7);
+	}
+
+	&__label {
+		position: relative;
+		display: inline-block;
+		font-size: ptr(12);
+		font-weight: bold;
+		text-transform: uppercase;
+		background-color: $brand-primary;
+		color: #ffffff;
+		border-radius: 4px;
+		padding: ptr(3.5) ptr(8);
+		margin-left: ptr(5);
+		margin-bottom: ptr(4);
+		top: ptr(-4);
+	}
+
+	&__description {
+		font-size: ptr(14);
+		margin-bottom: ptr(20);
+	}
+
+	&__skills {
+		font-size: ptr(14);
+		font-weight: 800;
+		text-transform: uppercase;
+		color: #bbbbbb;
+		padding-top: ptr(19);
+		border-top: 1px solid rgba(0, 0, 0, .1);
+
+		+ .person-profile__tags {
+			padding-top: ptr(8);
+			border-top: 0;
+		}
+	}
+
+	&__skill {
+		margin-bottom: ptr(5);
+	}
+
+	&__skill-rating {
+		margin-left: ptr(5);
+		color: $brand-primary;
+	}
+
+	&__tags {
+		padding-top: ptr(19);
+		border-top: 1px solid rgba(0, 0, 0, .1);
+	}
+
+	&__tag {
+		display: inline-block;
+		font-size: ptr(12);
+		font-weight: bold;
+		text-transform: uppercase;
+		padding: ptr(4.5) ptr(10);
+		margin-right: ptr(6);
+		margin-bottom: ptr(3);
+		background-color: #aaaaaa;
+		color: #ffffff;
+		border-radius: 4px;
+		transition: $primary-transition;
+	}
+
+	&__social-icons {
+		margin-top: ptr(22);
+		padding-top: ptr(16);
+		font-weight: 800;
+		font-size: ptr(12);
+		text-transform: uppercase;
+		color: #bbbbbb;
+		border-top: 1px solid rgba(0, 0, 0, .1);
+	}
+
+	&__social-icon {
+		font-size: ptr(16);
+		color: $brand-secondary;
+		margin-left: ptr(5);
+
+		&:first-of-type {
+			margin-left: ptr(7);
+		}
+
+		.fa {
+			vertical-align: middle;
+		}
+
+		&:focus,
+		&:hover {
+			color: darken($brand-secondary, 6);
+		}
+	}
+
+	&__carousel {
+		.slick-arrow {
+			position: absolute;
+			z-index: 10;
+			font-size: ptr(30);
+			text-align: center;
+			background-color: transparent;
+			color: rgba(255, 255, 255, .5);
+			border: 0;
+			border-left: 1px dashed rgba(255, 255, 255, .5);
+			height: 50%;
+			width: ptr(60);
+			right: 0;
+			transition: $primary-transition;
+
+			@include media-breakpoint-up(lg) {
+				opacity: 0;
+				visibility: hidden;
+			}
+
+			&:focus {
+				outline: none;
+			}
+
+			&:hover {
+				color: rgba(255, 255, 255, .9);
+			}
+		}
+
+		.slick-prev {
+			bottom: 0;
+
+			.fa {
+				position: absolute;
+				top: ptr(8);
+				left: 0;
+				right: 0;
+			}
+		}
+
+		.slick-next {
+			top: 0;
+
+			.fa {
+				position: absolute;
+				bottom: ptr(8);
+				left: 0;
+				right: 0;
+			}
+		}
+	}
+
+	.slick-vertical {
+		.slick-slide {
+			border: 0;
+		}
+	}
+
+	&__carousel-item--video {
+		position: relative;
+		height: 0;
+		padding-bottom: 56.25%; /* 16:9 */
+
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}

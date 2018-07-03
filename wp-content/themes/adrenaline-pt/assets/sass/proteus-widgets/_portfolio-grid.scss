@@ -1,0 +1,463 @@
+/* 05.33. Portfolio Grid */
+.portfolio-grid {
+	position: relative;
+
+	$border-color:        rgba(0, 0, 0, .1);
+	$border-color-slider: rgba(0, 0, 0, .1);
+	$animation-duration:  .2s; // needs to be in sync with JS
+	$arrow-size:          (60rem / 18);
+
+	// Specific style if full width stretch is used
+	.siteorigin-panels-stretch & {
+		margin: 0 ptr(15);
+
+		@include media-breakpoint-up(sm) {
+			margin: 0 ptr(30);
+		}
+
+		@include media-breakpoint-up(lg) {
+			margin: 0 ptr(60);
+		}
+	}
+
+	// Container for title, navigation and arrows.
+	&__header {
+		position: relative;
+		display: inline-block;
+		margin-bottom: ptr(30);
+		width: 100%;
+
+		@include media-breakpoint-up(lg) {
+			margin-bottom: ptr(40);
+		}
+	}
+
+	// Widget title.
+	&__title {
+		display: inline-block;
+		font-size: ptr(30);
+		margin-top: ptr(33);
+		margin-bottom: ptr(28);
+		text-transform: uppercase;
+
+		@include media-breakpoint-up(lg) {
+			margin-top: 0;
+			margin-bottom: 0;
+			margin-right: ptr(15);
+			vertical-align: middle;
+		}
+
+		+ .portfolio-grid__nav {
+			margin-top: 0;
+		}
+	}
+
+	// Portfolio grid navigation.
+	&__nav {
+		margin: 0;
+		font-size: 0;
+		list-style: none;
+		overflow: hidden;
+		position: relative;
+		background-color: #f2f2f2;
+		border: 1px solid #dddddd;
+		padding: 0 ptr(30);
+		margin-top: ptr(100);
+
+		@include media-breakpoint-up(lg) {
+			display: inline-block;
+			overflow: visible;
+			position: static;
+			background-color: transparent;
+			border: 0;
+			padding: 0;
+			margin-top: 0;
+		}
+
+		// Specific style if full width stretch is used
+		.siteorigin-panels-stretch & {
+			@include media-breakpoint-up(lg) {
+				margin-left: ptr(60);
+			}
+		}
+
+		// Portfolio grid single item in navigation.
+		&-item {
+			position: relative;
+			text-overflow: ellipsis;
+			text-transform: uppercase;
+			font-size: ptr(14);
+			font-weight: 800;
+			background-color: transparent;
+			color: $brand-secondary;
+
+			@include media-breakpoint-up(lg) {
+				display: inline-block;
+			}
+
+			&.is-active {
+				position: absolute;
+				top: 0;
+				left: ptr(30);
+				right: ptr(30);
+				color: $brand-primary;
+
+				@include media-breakpoint-up(lg) {
+					position: relative;
+					left: 0;
+					right: 0;
+				}
+
+				// scss-lint:disable NestingDepth
+
+				> .portfolio-grid__nav-link {
+					color: $brand-primary;
+
+					@include media-breakpoint-up(lg) {
+						border: 2px solid $brand-primary;
+						border-left: 0;
+					}
+
+					&::before {
+						background-color: $brand-primary;
+					}
+
+					&:focus,
+					&:hover {
+						color: $brand-primary;
+					}
+				}
+
+				&:first-of-type {
+					.portfolio-grid__nav-link {
+						@include media-breakpoint-up(lg) {
+							border-left: 2px solid $brand-primary;
+						}
+					}
+				}
+			}
+
+			&:first-of-type {
+				.portfolio-grid__nav-link {
+					@include media-breakpoint-down(md) {
+						border-top: 0;
+					}
+
+					@include media-breakpoint-up(lg) {
+						border-left: 2px solid #dddddd;
+						border-top-left-radius: ptr(60);
+						border-bottom-left-radius: ptr(60);
+					}
+
+					&::before {
+						@include media-breakpoint-up(lg) {
+							display: none;
+						}
+					}
+
+					&:focus,
+					&:hover {
+						@include media-breakpoint-up(lg) {
+							border-left: 2px solid $brand-primary;
+						}
+					}
+				}
+			}
+
+			&:last-of-type {
+				.portfolio-grid__nav-link {
+					@include media-breakpoint-up(lg) {
+						border-top-right-radius: ptr(60);
+						border-bottom-right-radius: ptr(60);
+					}
+				}
+			}
+		}
+
+		&-link {
+			position: relative;
+			display: block;
+			font-size: ptr(16);
+			padding-top: ptr(18);
+			padding-bottom: ptr(18);
+			border-top: 1px solid rgba(0, 0, 0, .1);
+			color: $brand-secondary;
+			transition: $primary-transition;
+
+			@include media-breakpoint-up(lg) {
+				display: inline-block;
+				font-size: ptr(14);
+				border: 2px solid #dddddd;
+				border-left: 0;
+				padding: ptr(18) ptr(40) ptr(17);
+			}
+
+			&::before {
+				@include media-breakpoint-up(lg) {
+					position: absolute;
+					content: '';
+					z-index: 10;
+					width: 2px;
+					height: auto;
+					left: -2px;
+					top: -2px;
+					bottom: -2px;
+				}
+			}
+
+			&:focus,
+			&:hover {
+				text-decoration: none;
+				color: $brand-primary;
+
+				@include media-breakpoint-up(lg) {
+					border: 2px solid $brand-primary;
+					border-left: 0;
+				}
+
+				&::before {
+					@include media-breakpoint-up(lg) {
+						background-color: $brand-primary;
+					}
+				}
+			}
+		}
+	}
+
+	&__mobile-filter {
+		position: absolute;
+		right: 0;
+		top: ptr(3);
+		z-index: 2;
+		height: $arrow-size;
+		line-height: ptr(54);
+		padding: 0 ptr(30);
+		margin-top: ptr(15);
+	}
+
+	// Container for arrows.
+	&__arrows {
+		text-align: center;
+		margin-top: ptr(25);
+
+		@include media-breakpoint-up(lg) {
+			display: inline-block;
+			float: right;
+			vertical-align: top;
+			margin-top: 0;
+		}
+
+		// Specific style if full width stretch is used
+		.siteorigin-panels-stretch & {
+			@include media-breakpoint-up(lg) {
+				margin-right: ptr(60);
+			}
+		}
+	}
+
+	// Arrows for portfolio grid.
+	&__arrow {
+		position: relative;
+		display: inline-block;
+		text-align: center;
+		padding: ptr(16) ptr(16.5) ptr(13);
+		background-color: transparent;
+		color: #888888;
+		border: 2px solid #dddddd;
+		transition: $primary-transition;
+
+		.fa {
+			font-size: ptr(24);
+		}
+
+		&--left {
+			border-right: 1px solid #dddddd;
+			border-top-left-radius: ptr(60);
+			border-bottom-left-radius: ptr(60);
+			padding-left: ptr(21.5);
+		}
+
+		&--right {
+			border-left: 1px solid #dddddd;
+			border-top-right-radius: ptr(60);
+			border-bottom-right-radius: ptr(60);
+			padding-right: ptr(21.5);
+		}
+
+		&:focus {
+			background-color: transparent;
+			color: $gray-light;
+		}
+
+		&:hover {
+			background-color: transparent;
+			color: $gray-dark;
+		}
+	}
+
+	// Single portfolio grid item.
+	&__item {
+		margin-bottom: ptr(30);
+
+		&--dummy {
+			position: relative;
+			background-color: #ffffff;
+			border: 2px dashed transparent;
+			box-shadow: none;
+
+			.fa {
+				color: #cccccc;
+			}
+		}
+	}
+
+	// Image for single potrfolio grid item.
+	&__image {
+		display: block;
+		position: relative;
+		border-radius: 4px;
+		margin-bottom: ptr(16);
+		overflow: hidden;
+		mask-image: radial-gradient(circle, #ffffff 100%, #000000 100%);
+
+		img {
+			width: 100%;
+			transform: scale(1);
+			mask-image: radial-gradient(circle, #ffffff 100%, #000000 100%);
+			transition: all 300ms ease-out;
+		}
+
+		&::after {
+			position: absolute;
+			content: '';
+			z-index: 5;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-image: radial-gradient(transparent 50%, rgba(0, 0, 0, .5));
+		}
+
+		&:focus,
+		&:hover {
+			img {
+				transform: scale(1.1);
+			}
+		}
+	}
+
+	// Specification on image for single portfolio grid item.
+	&__specification {
+		position: absolute;
+		z-index: 10;
+		font-size: ptr(12);
+		font-weight: bold;
+		text-transform: uppercase;
+		color: #ffffff;
+		top: ptr(20);
+		left: ptr(25);
+
+		.fa {
+			font-size: ptr(16);
+			vertical-align: middle;
+			padding-bottom: ptr(1);
+			margin-right: ptr(5);
+		}
+	}
+
+	&__item-title {
+		display: block;
+		margin-bottom: ptr(-2);
+		color: $brand-secondary;
+
+		&:focus,
+		&:hover {
+			color: $brand-secondary;
+		}
+	}
+
+	&__price {
+		display: inline-block;
+		font-size: ptr(30);
+		font-weight: 800;
+		color: $brand-secondary;
+		margin-bottom: 0;
+		margin-right: ptr(5);
+
+		sup {
+			font-size: ptr(16);
+			top: ptr(-10);
+			margin-right: ptr(3);
+		}
+	}
+
+	&__label {
+		display: inline-block;
+		font-size: ptr(12);
+		font-weight: bold;
+		text-transform: uppercase;
+		vertical-align: top;
+		background-color: $brand-primary;
+		color: #ffffff;
+		text-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+		border-radius: 4px;
+		padding: ptr(3.5) ptr(10);
+		margin-top: ptr(10);
+
+		@include media-breakpoint-up(lg) {
+			margin-top: ptr(11);
+		}
+	}
+
+	&__cta {
+		white-space: inherit;
+	}
+
+	// &--grid {}
+	&--slider {
+		.portfolio-grid__header {
+			border-bottom-color: $border-color-slider;
+			padding-bottom: ptr(15);
+
+			@include media-breakpoint-up(lg) {
+				padding-bottom: 0;
+			}
+		}
+
+		&.is-nav-arrows-hidden {
+			.portfolio-grid__arrow {
+				display: none;
+			}
+
+			.portfolio-grid__header {
+				padding-bottom: 0;
+			}
+		}
+	}
+
+	// animations
+	@keyframes fadeout {
+		from {
+			opacity: 1;
+			transform: scale(1);
+		}
+
+		to {
+			opacity: 0;
+			transform: scale(0);
+		}
+	}
+
+	.is-fadeout {
+		animation: fadeout ease-in-out $animation-duration 1 forwards;
+	}
+
+	.is-fadein {
+		animation: fadeout ease-in-out $animation-duration 1 reverse forwards;
+	}
+
+	// Hack, so the box-shadow is vissible.
+	.carousel-inner > .carousel-item {
+		margin: 0 ptr(3);
+	}
+}

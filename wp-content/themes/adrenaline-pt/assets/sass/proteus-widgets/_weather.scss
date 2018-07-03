@@ -1,0 +1,185 @@
+/* 05.25. Weather */
+.weather {
+	@include media-breakpoint-up(sm) {
+		display: flex;
+	}
+
+	&-current {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-between;
+		padding: ptr(20) ptr(30) ptr(22);
+		padding-right: ptr(20);
+		border-radius: ptr(2);
+		box-shadow: 0 1px 15px rgba(0, 0, 0, .1);
+
+		&__container {
+			flex: 0 1 100%;
+			margin-bottom: ptr(10);
+			margin-right: ptr(5);
+
+			@include media-breakpoint-up(sm) {
+				margin-bottom: 0;
+			}
+		}
+
+		&__title {
+			font-weight: bold;
+			font-size: ptr(14);
+			text-transform: uppercase;
+			color: $brand-primary;
+			margin-bottom: 0;
+
+			&:focus,
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
+		a {
+			&.weather-current__title {
+				&::after {
+					content: '\f178';
+					font-family: 'FontAwesome';
+					margin-left: ptr(10);
+				}
+			}
+		}
+
+		&__temperature {
+			font-size: ptr(60);
+			font-weight: bold;
+			color: $brand-secondary;
+			margin-bottom: 0;
+			margin-right: ptr(30);
+
+			@include media-breakpoint-up(lg) {
+				font-size: ptr(50);
+			}
+
+			@include media-breakpoint-up(xl) {
+				font-size: ptr(60);
+			}
+
+			sup {
+				font-size: ptr(32);
+				top: ptr(-20);
+
+				@include media-breakpoint-up(lg) {
+					font-size: ptr(26);
+					top: ptr(-17);
+				}
+
+				@include media-breakpoint-up(xl) {
+					font-size: ptr(32);
+					top: ptr(-20);
+				}
+			}
+		}
+
+		&__temperature-container {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-end;
+		}
+
+		&__powered-by-link {
+			display: block;
+			font-size: ptr(10);
+			color: lighten($gray, 10);
+			font-weight: normal;
+			margin-top: ptr(-10);
+
+			&:focus,
+			&:hover {
+				text-decoration: none;
+				color: $gray;
+			}
+		}
+
+		&__icon {
+			.widget & {
+				width: ptr(80);
+				height: ptr(80);
+			}
+		}
+	}
+
+	&-forecast {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-between;
+		flex: 1 1 auto;
+		text-align: center;
+		background-color: $gray-lightest;
+		border-radius: ptr(2);
+		padding: ptr(23) ptr(10) ptr(21);
+		margin-left: ptr(6);
+		margin-bottom: ptr(6);
+
+		@include media-breakpoint-up(sm) {
+			flex: 0 0 auto;
+			margin-bottom: 0;
+			padding: ptr(23) ptr(20) ptr(21);
+		}
+
+		@include media-breakpoint-up(lg) {
+			padding: ptr(23) ptr(10) ptr(21);
+		}
+
+		@include media-breakpoint-up(xl) {
+			padding: ptr(23) ptr(20) ptr(21);
+		}
+
+		&__container {
+			display: flex;
+			flex-flow: row wrap;
+			flex: 1 0 auto;
+		}
+
+		&__icon {
+			width: ptr(30);
+			margin-bottom: ptr(3);
+		}
+
+		&__day {
+			position: relative;
+			font-weight: 800;
+			text-transform: uppercase;
+			padding-bottom: ptr(15);
+
+			&::after {
+				@include media-breakpoint-up(sm) {
+					position: absolute;
+					content: '';
+					bottom: 0;
+					left: ptr(-10);
+					right: ptr(-10);
+					height: 1px;
+					background-color: #dddddd;
+				}
+
+				@include media-breakpoint-up(lg) {
+					left: 0;
+					right: 0;
+				}
+
+				@include media-breakpoint-up(xl) {
+					left: ptr(-10);
+					right: ptr(-10);
+				}
+			}
+		}
+
+		&__temperature {
+			font-size: ptr(26);
+			font-weight: bold;
+			margin-bottom: 0;
+
+			sup {
+				font-size: ptr(16);
+				top: ptr(-7);
+			}
+		}
+	}
+}

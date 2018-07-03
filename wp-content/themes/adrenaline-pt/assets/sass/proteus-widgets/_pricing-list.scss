@@ -1,0 +1,38 @@
+/* 05.27. Pricing List */
+.pricing-list {
+	&__item {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: baseline;
+		padding-bottom: ptr(24);
+		margin-bottom: ptr(22);
+		border-bottom: 1px dashed rgba(0, 0, 0, .1);
+	}
+
+	&__title {
+		margin-bottom: ptr(9);
+	}
+
+	&__badge {
+		font-size: ptr(12);
+		font-weight: bold;
+		text-transform: uppercase;
+		background-color: $brand-primary;
+		color: #ffffff;
+		border-radius: ptr(4);
+		padding: ptr(4) ptr(10);
+		margin-left: ptr(5);
+		margin-bottom: ptr(3);
+	}
+
+	&__price {
+		margin-bottom: 0;
+	}
+
+	&__description {
+		margin-bottom: 0;
+		font-size: ptr(16);
+		width: 100%;
+	}
+}

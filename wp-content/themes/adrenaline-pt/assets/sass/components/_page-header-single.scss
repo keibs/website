@@ -1,0 +1,109 @@
+/* 05.03. Page Header Single */
+.page-header-single {
+	display: flex;
+	flex-flow: column nowrap;
+	background-color: $gray-lighter;
+	margin-bottom: ptr(60);
+
+	@include media-breakpoint-up(lg) {
+		justify-content: space-between;
+		align-items: center;
+		flex-flow: row nowrap;
+		margin-bottom: ptr(100);
+	}
+
+	&__content {
+		order: 1;
+		flex: 1 1 auto;
+		padding: ptr(45);
+		text-align: center;
+
+		@include media-breakpoint-up(lg) {
+			padding: ptr(75);
+		}
+	}
+
+	&__categories {
+		margin-bottom: ptr(30);
+
+		a {
+			display: inline-block;
+			font-size: ptr(12);
+			font-weight: bold;
+			text-transform: uppercase;
+			background-color: #aaaaaa;
+			color: #ffffff;
+			border-radius: 4px;
+			padding: ptr(3) ptr(8) ptr(4);
+
+			&:focus,
+			&:hover {
+				color: #ffffff;
+			}
+		}
+	}
+
+	&__title {
+		margin-bottom: ptr(29);
+	}
+
+	&__meta {
+		font-size: ptr(14);
+	}
+
+	&__author-link {
+		color: $gray;
+		font-weight: 800;
+
+		&:focus,
+		&:hover {
+			color: $gray;
+		}
+	}
+
+	&__image-container {
+		order: 2;
+		flex: none;
+
+		@include media-breakpoint-up(lg) {
+			width: calc(100% - #{ptr(400)});
+
+			&.compat-object-fit {
+				background-size: cover;
+				background-position: center center;
+
+				.page-header-single__image {
+					opacity: 0;
+				}
+			}
+		}
+
+		@include media-breakpoint-up(xl) {
+			width: calc(100% - #{ptr(500)});
+		}
+
+		+ .page-header-single__content {
+			flex: 0 1 auto;
+
+			@include media-breakpoint-up(lg) {
+				text-align: left;
+				padding: ptr(45);
+				width: ptr(400);
+			}
+
+			@include media-breakpoint-up(xl) {
+				padding: ptr(75);
+				width: ptr(500);
+			}
+		}
+	}
+
+	&__image {
+		width: 100%;
+
+		@include media-breakpoint-up(lg) {
+			object-fit: cover;
+			height: ptr(500);
+		}
+	}
+}

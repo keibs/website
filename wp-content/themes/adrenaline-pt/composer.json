@@ -1,0 +1,19 @@
+{
+    "name":         "proteusthemes/adrenaline-pt",
+    "description":  "WordPress theme by ProteusThemes.",
+    "license":      "GPL-2.0+",
+    "type":         "project",
+    "require": {
+        "tgmpa/tgm-plugin-activation":            "~2.6.1",
+        "proteusthemes/wai-aria-walker-nav-menu": "^1.2.0",
+        "proteusthemes/wp-customizer-utilities":  "^2.3.0",
+        "proteusthemes/proteuswidgets":           "^3.7.2",
+        "proteusthemes/sticky-menu":              "^1.2.2",
+        "proteusthemes/edd-theme-updater":        "^0.2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "ProteusThemes\\WeatherWidget\\": "inc/widgets/widget-weather/"
+        }
+    }
+}

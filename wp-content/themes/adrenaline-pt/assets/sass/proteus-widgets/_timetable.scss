@@ -1,0 +1,122 @@
+/* 05.37. Timetable */
+
+// scss-lint:disable NestingDepth
+
+.timetable {
+	&__item {
+		display: flex;
+		align-items: center;
+
+		&:not(:last-child) {
+			margin-bottom: ptr(10);
+		}
+	}
+
+	a {
+		&.timetable__item {
+			&:focus,
+			&:hover {
+				text-decoration: none;
+
+				.timetable {
+					&__date,
+					&__content {
+						background-color: $brand-primary;
+						color: #ffffff;
+					}
+
+					&__title,
+					&__description {
+						color: #ffffff;
+
+						&::after {
+							background-color: rgba(255, 255, 255, .1);
+						}
+					}
+
+					&__price {
+						color: #ffffff;
+					}
+				}
+			}
+		}
+	}
+
+	&__date {
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+		justify-content: center;
+		font-size: ptr(15);
+		font-weight: 800;
+		text-transform: uppercase;
+		background-color: $gray-lightest;
+		color: $gray;
+		border-radius: 4px;
+		width: ptr(75);
+		height: ptr(75);
+		min-height: ptr(75);
+		margin-right: ptr(5);
+		transition: $primary-transition;
+	}
+
+	&__month,
+	&__day {
+		display: block;
+		line-height: 1;
+	}
+
+	&__month {
+		margin-bottom: ptr(3);
+	}
+
+	&__content {
+		display: flex;
+		align-items: center;
+		font-size: ptr(14);
+		text-align: center;
+		background-color: $gray-lightest;
+		border-radius: 4px;
+		width: calc(100% - #{ptr(80)});
+		height: ptr(75);
+		min-height: ptr(75);
+		transition: $primary-transition;
+	}
+
+	&__title,
+	&__description {
+		position: relative;
+		color: $gray;
+
+		&::after {
+			position: absolute;
+			content: '';
+			background-color: rgba(0, 0, 0, .1);
+			right: 0;
+			top: calc(50% - #{ptr(15)});
+			height: ptr(30);
+			width: 1px;
+			transition: $primary-transition;
+		}
+
+		&:last-child {
+			&::after {
+				display: none;
+			}
+		}
+	}
+
+	&__title {
+		flex: 3 0 45%;
+		margin-bottom: 0;
+	}
+
+	&__description {
+		flex: 2 0 35%;
+	}
+
+	&__price {
+		flex: 1 0 20%;
+		color: $gray;
+	}
+}

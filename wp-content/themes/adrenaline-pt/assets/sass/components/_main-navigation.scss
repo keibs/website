@@ -1,0 +1,340 @@
+/* 05.10. Main Navigation */
+.main-navigation {
+	@include list-unstyled;
+	background-color: $brand-secondary;
+	border-radius: 4px;
+	margin-bottom: ptr(30);
+
+	@include media-breakpoint-up(lg) {
+		display: flex;
+		background-color: transparent;
+		border-radius: 0;
+	}
+
+	.menu-item {
+		position: relative;
+		font-size: 14px;
+
+		@include media-breakpoint-up(lg) {
+			flex: 1 1 auto;
+			text-align: center;
+		}
+
+		// :hover colors for Main Navigation links (without sub-menus).
+		&:focus,
+		&:hover,
+		&[aria-expanded="true"] {
+			> a {
+				color: #ffffff;
+				text-decoration: none;
+			}
+
+			// 1. level sub-menus are open on :hover.
+			> .sub-menu {
+				visibility: visible;
+				opacity: 1;
+			}
+
+			// Line below main navigation.
+			&::before {
+				@include media-breakpoint-up(lg) {
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+		}
+
+		&:first-child {
+			> a {
+				@include media-breakpoint-up(lg) {
+					border-top-left-radius: 4px;
+					border-top-right-radius: 4px;
+				}
+			}
+		}
+
+		&:last-child {
+			> a {
+				@include media-breakpoint-up(lg) {
+					border-bottom-left-radius: 4px;
+					border-bottom-right-radius: 4px;
+				}
+			}
+		}
+	}
+
+	> .menu-item {
+		> a {
+			// Line between links.
+			&::before {
+				@include media-breakpoint-up(lg) {
+					position: absolute;
+					content: '';
+					top: calc(50% - #{ptr(10)});
+					right: 0;
+					width: 1px;
+					height: 20px;
+					background-color: rgba(255, 255, 255, .15);
+				}
+			}
+		}
+
+		> .sub-menu {
+			padding: 15px 0;
+
+			@include media-breakpoint-up(lg) {
+				padding: 2px 0 0;
+			}
+
+			// Line between links for mobile.
+			&::after {
+				position: absolute;
+				content: '';
+				background-color: rgba(255, 255, 255, .2);
+				width: calc(100% - 60px);
+				height: 1px;
+				left: 30px;
+				top: 0;
+
+				@include media-breakpoint-up(lg) {
+					display: none;
+				}
+			}
+		}
+
+		// Line between links for mobile.
+		&:not(:last-of-type) {
+			&::after {
+				position: absolute;
+				content: '';
+				background-color: rgba(255, 255, 255, .2);
+				width: calc(100% - 60px);
+				height: 1px;
+				left: 30px;
+				bottom: 0;
+
+				@include media-breakpoint-up(lg) {
+					display: none;
+				}
+			}
+		}
+
+		// Hide line next to the last link.
+		&:last-of-type {
+			> a {
+				&::before {
+					@include media-breakpoint-up(lg) {
+						display: none;
+					}
+				}
+			}
+		}
+
+		// Line below main navigation.
+		&::before {
+			@include media-breakpoint-up(lg) {
+				position: absolute;
+				content: '';
+				opacity: 0;
+				visibility: hidden;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				height: 5px;
+				background-color: $brand-primary;
+			}
+		}
+	}
+
+	// Main Navigation Links and Colors.
+	a {
+		display: block;
+		position: relative;
+		font-weight: 800;
+		text-transform: uppercase;
+		color: #a3adbc;
+		padding: 20px 30px;
+
+		@include media-breakpoint-up(lg) {
+			color: #a3adbc;
+			padding: 39px 0 40px;
+		}
+
+		&:focus {
+			@include media-breakpoint-up(lg) {
+				text-decoration: none;
+				color: #a3adbc;
+			}
+		}
+	}
+
+	// Active current link.
+	> .current-menu-item {
+		> a {
+			@include media-breakpoint-up(lg) {
+				color: #ffffff;
+			}
+		}
+
+		// Line below main navigation.
+		&::before {
+			@include media-breakpoint-up(lg) {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+
+	// Line under link even if its menu ancestor.
+	> .current-menu-ancestor {
+		// Line below main navigation.
+		&::before {
+			@include media-breakpoint-up(lg) {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+
+		&.menu-item-has-children {
+			// Line below main navigation.
+			&::before {
+				@include media-breakpoint-up(lg) {
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+		}
+	}
+
+	// Item with children.
+	> .menu-item-has-children {
+		// Indicator for sub-menus.
+		> a {
+			&::after {
+				@include media-breakpoint-up(lg) {
+					content: '\f0d7';
+					font-family: 'FontAwesome';
+					vertical-align: top;
+					margin-left: ptr(15);
+					color: $brand-primary;
+				}
+			}
+		}
+	}
+
+	// scss-lint:disable SelectorDepth
+
+	// Sub-menu items.
+	.sub-menu {
+		@include list-unstyled;
+		position: relative;
+
+		@include media-breakpoint-up(lg) {
+			position: absolute;
+			background-color: transparent;
+			visibility: hidden;
+			opacity: 0;
+			padding: 0;
+		}
+
+		.menu-item {
+			display: block;
+
+			// 2. level sub menus are open on :hover.
+			&:focus,
+			&:hover,
+			&[aria-expanded="true"] {
+				> a {
+					color: #ffffff;
+					text-decoration: none;
+
+					@include media-breakpoint-up(lg) {
+						color: #ffffff;
+					}
+				}
+
+				> .sub-menu {
+					visibility: visible;
+					opacity: 1;
+				}
+			}
+
+			&:not(:last-of-type) {
+				a {
+					&::before {
+						@include media-breakpoint-up(lg) {
+							position: absolute;
+							content: '';
+							bottom: 0;
+							left: ptr(25);
+							width: calc(100% - #{ptr(50)});
+							height: 1px;
+							background-color: rgba(255, 255, 255, .15);
+						}
+					}
+				}
+			}
+		}
+
+		// Sub menu links on mobile.
+		a {
+			display: block;
+			font-family: $primary-font;
+			font-weight: normal;
+			text-transform: none;
+			text-align: left;
+			color: $gray-lightest;
+			padding: 10px 30px;
+
+			@include media-breakpoint-up(lg) {
+				font-weight: bold;
+				min-width: ptr(200);
+				white-space: nowrap;
+				background-color: $brand-secondary;
+				color: #a3adbc;
+				padding: ptr(19.5) ptr(25);
+			}
+		}
+
+		// 2. level + are opening next to each other.
+		.sub-menu {
+			@include media-breakpoint-up(lg) {
+				left: 100%;
+				top: 0;
+				padding-left: ptr(2);
+			}
+
+			a {
+				padding-left: 40px;
+
+				@include media-breakpoint-up(lg) {
+					padding-left: ptr(25);
+				}
+			}
+
+			.sub-menu a {
+				padding-left: 50px;
+
+				@include media-breakpoint-up(lg) {
+					padding-left: ptr(25);
+				}
+			}
+
+			.sub-menu .sub-menu a {
+				padding-left: 60px;
+
+				@include media-breakpoint-up(lg) {
+					padding-left: ptr(25);
+				}
+			}
+
+			.sub-menu .sub-menu .sub-menu a {
+				padding-left: 70px;
+
+				@include media-breakpoint-up(lg) {
+					padding-left: ptr(25);
+				}
+			}
+		}
+	}
+}

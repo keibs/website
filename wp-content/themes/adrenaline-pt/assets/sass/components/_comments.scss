@@ -1,0 +1,116 @@
+/* 05.43. Comments */
+.comments {
+	border-top: 1px dashed #cccccc;
+	margin-top: ptr(49);
+	padding-top: ptr(85);
+
+	&__heading {
+		text-transform: uppercase;
+		font-size: ptr(24);
+		margin-bottom: ptr(25);
+	}
+
+	.logged-in-as {
+		a {
+			color: $gray-light;
+		}
+	}
+}
+
+.comment {
+	@include list-unstyled;
+
+	&__inner {
+		display: inline-block;
+		background-color: $gray-lightest;
+		border-radius: 4px;
+		width: 100%;
+		margin-bottom: ptr(30);
+		padding: ptr(37) ptr(44) ptr(38);
+	}
+
+	&__avatar {
+		float: left;
+		margin-right: ptr(30);
+
+		img {
+			border-radius: 50%;
+		}
+	}
+
+	.comment-reply-link,
+	.comment-edit-link {
+		font-size: ptr(14);
+		font-weight: 800;
+		text-transform: uppercase;
+		margin-left: ptr(10);
+		padding-left: ptr(10);
+	}
+
+	&__date {
+		font-size: ptr(14);
+	}
+
+	&__author {
+		font-size: ptr(14);
+		font-weight: 800;
+		font-style: normal;
+		color: $gray;
+
+		a {
+			color: $gray;
+		}
+	}
+
+	&__metadata {
+		display: inline-block;
+		font-size: ptr(14);
+		float: right;
+	}
+
+	&__text {
+		font-size: ptr(16);
+		margin-top: ptr(14);
+
+		p:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+
+	&-form {
+		textarea {
+			padding: ptr(18) ptr(20);
+
+			@include media-breakpoint-up(lg) {
+				margin-bottom: ptr(15);
+			}
+		}
+
+		input {
+			padding: ptr(18) ptr(20);
+
+			@include media-breakpoint-up(lg) {
+				margin-bottom: ptr(15);
+			}
+		}
+	}
+
+	.children {
+		margin-bottom: 0;
+
+		@include media-breakpoint-down(md) {
+			padding-left: ptr(10);
+		}
+	}
+
+	&-notes {
+		margin-bottom: ptr(23);
+	}
+
+	&-respond {
+		.form-submit {
+			text-align: right;
+			margin-bottom: 0;
+		}
+	}
+}

@@ -1,0 +1,63 @@
+/* 05.30. Special Offer */
+.special-offer {
+	background-color: $gray-lightest;
+	border-radius: 4px;
+
+	&__image {
+		position: relative;
+
+		img {
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+	}
+
+	&__location {
+		position: absolute;
+		font-size: ptr(12);
+		font-weight: bold;
+		text-transform: uppercase;
+		color: #ffffff;
+		left: ptr(30);
+		top: ptr(20);
+
+		.fa {
+			font-size: ptr(14);
+			margin-right: ptr(4);
+		}
+	}
+
+	&__content {
+		padding: ptr(14) ptr(30) ptr(30);
+	}
+
+	&__price {
+		display: inline-block;
+		font-size: ptr(30);
+		font-weight: 800;
+		vertical-align: middle;
+		color: $brand-secondary;
+		padding-bottom: ptr(1);
+	}
+
+	&__label {
+		display: inline-block;
+		font-size: ptr(12);
+		font-weight: bold;
+		text-transform: uppercase;
+		background-color: $brand-primary;
+		color: #ffffff;
+		border-radius: 4px;
+		padding: ptr(4) ptr(10) ptr(3);
+		margin-left: ptr(7);
+	}
+
+	&__title {
+		margin-bottom: ptr(8);
+	}
+
+	&__text {
+		font-size: ptr(14);
+		margin-bottom: ptr(15);
+	}
+}

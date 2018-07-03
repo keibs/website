@@ -1,0 +1,103 @@
+/* 05.13. Header Info */
+.header-info {
+	font-size: ptr(14);
+	text-align: center;
+
+	@include media-breakpoint-up(lg) {
+		display: flex;
+		flex-flow: row wrap;
+		text-align: left;
+	}
+
+	&__content {
+		padding: ptr(15) ptr(30) 0;
+		margin-bottom: 0;
+
+		@include media-breakpoint-up(lg) {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			width: 50%;
+			height: ptr(180);
+			border-right: 1px solid #dddddd;
+		}
+	}
+
+	&__link {
+		font-weight: bold;
+		text-transform: uppercase;
+		color: $brand-secondary;
+
+		&-container {
+			padding: ptr(15) ptr(30);
+
+			@include media-breakpoint-up(lg) {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 50%;
+				height: ptr(90);
+				border-bottom: 1px solid #dddddd;
+				padding: ptr(20);
+			}
+		}
+
+		.fa {
+			font-size: ptr(18);
+			color: $brand-primary;
+			vertical-align: middle;
+			margin-right: ptr(5);
+			padding-bottom: ptr(2);
+		}
+
+		&:focus,
+		&:hover {
+			text-decoration: none;
+			color: $brand-primary;
+		}
+	}
+
+	&__social {
+		background-color: $gray-lightest;
+		padding: ptr(15) ptr(30);
+
+		@include media-breakpoint-up(lg) {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 50%;
+			height: ptr(90);
+			margin-top: ptr(-90);
+			margin-left: 50%;
+			padding: ptr(20);
+		}
+
+		&-link {
+			font-size: ptr(20);
+			color: $brand-secondary;
+
+			&:not(:last-of-type) {
+				border-right: 1px solid #dddddd;
+				margin-right: ptr(20);
+				padding-right: ptr(20);
+
+				@include media-breakpoint-up(lg) {
+					margin-right: ptr(15);
+					padding-right: ptr(15);
+				}
+
+				@media (min-width: 1400px) {
+					margin-right: ptr(20);
+					padding-right: ptr(20);
+				}
+			}
+
+			&:focus,
+			&:hover {
+				text-decoration: none;
+				color: $brand-primary;
+			}
+		}
+	}
+}

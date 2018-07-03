@@ -1,0 +1,62 @@
+/* 05.18. Icon Box */
+.icon-box {
+	color: $gray;
+
+	.fa {
+		float: left;
+		font-size: ptr(24);
+		color: $brand-secondary;
+		padding-top: ptr(2);
+	}
+
+	&__title,
+	&__subtitle {
+		display: block;
+		font-size: ptr(16);
+		margin-left: ptr(35);
+		margin-bottom: 0;
+	}
+}
+
+.header {
+	.icon-box {
+		.fa {
+			padding-top: 0;
+			float: none;
+
+			@include media-breakpoint-up(lg) {
+				float: left;
+			}
+		}
+
+		&__title,
+		&__subtitle {
+			display: inline-block;
+			font-size: ptr(14);
+			margin-left: ptr(12);
+		}
+
+		&__title {
+			+ .icon-box__subtitle {
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+// Icon Box with link.
+a {
+	&.icon-box {
+		transition: $primary-transition;
+
+		&:focus,
+		&:hover {
+			text-decoration: none;
+			color: $gray;
+
+			.fa {
+				color: $brand-primary;
+			}
+		}
+	}
+}

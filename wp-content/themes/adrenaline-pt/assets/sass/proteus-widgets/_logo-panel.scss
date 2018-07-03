@@ -1,0 +1,25 @@
+/* 05.38. Logo Panel */
+.logo-panel {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+
+	@include media-breakpoint-up(lg) {
+		flex-flow: row nowrap;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	img {
+		min-width: 0;
+		opacity: .5;
+		filter: grayscale(100%);
+		transition: $primary-transition;
+		will-change: transform;
+
+		&:hover {
+			opacity: 1;
+			filter: none;
+		}
+	}
+}

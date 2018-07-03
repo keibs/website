@@ -1,0 +1,18 @@
+/* 05.06. Sidebar */
+.sidebar {
+	margin-top: ptr(50);
+
+	@include media-breakpoint-up(lg) {
+		margin-top: 0;
+	}
+
+	&__headings {
+		padding-bottom: ptr(17);
+		font-size: ptr(20);
+		text-transform: uppercase;
+	}
+
+	.widget {
+		margin-bottom: ptr(55);
+	}
+}

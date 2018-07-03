@@ -1,0 +1,123 @@
+/* 05.36. Latest Posts */
+.latest-posts {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin-right: -5px;
+	margin-left: -5px;
+
+	&__item {
+		position: relative;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-between;
+		flex: 1 1 auto;
+		min-width: calc(50% - 10px);
+		background: $brand-secondary url('assets/images/contour-pattern.png');
+		background-size: cover;
+		border-radius: 4px;
+		min-height: ptr(266);
+		padding: ptr(27) ptr(30) ptr(24);
+		margin: 5px;
+		transition: $primary-transition;
+
+		@include media-breakpoint-up(md) {
+			width: calc(50% - 10px);
+		}
+
+		&--more-news {
+			flex: 1 1 auto;
+			min-width: calc(25% - 10px);
+			order: 1;
+			justify-content: flex-end;
+			background-size: 100%;
+
+			@include media-breakpoint-up(md) {
+				width: calc(25% - 10px);
+			}
+
+			+ .latest-posts__item {
+				flex: 1 1 auto;
+				min-width: calc(25% - 10px);
+
+				@include media-breakpoint-up(md) {
+					width: calc(25% - 10px);
+				}
+			}
+		}
+
+		&:focus,
+		&:hover {
+			text-decoration: none;
+
+			&::after {
+				opacity: 1;
+				visibility: visible;
+				background: rgba(0, 0, 0, .5) radial-gradient(transparent 50%, rgba(0, 0, 0, .5));
+			}
+		}
+
+		&::after {
+			position: absolute;
+			content: '';
+			opacity: 1;
+			visibility: visible;
+			z-index: 5;
+			background: rgba(0, 0, 0, .2) radial-gradient(transparent 50%, rgba(0, 0, 0, .5));
+			border-radius: 4px;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			transition: $primary-transition;
+		}
+	}
+
+	&__date {
+		display: inline-block;
+		font-size: ptr(12);
+		font-weight: bold;
+		text-transform: uppercase;
+		background-color: $gray-lightest;
+		color: $brand-secondary;
+		border-radius: 4px;
+		padding: ptr(3.5) ptr(10);
+
+		&-container {
+			position: relative;
+			z-index: 10;
+			margin-bottom: ptr(30);
+		}
+	}
+
+	&__content {
+		position: relative;
+		z-index: 10;
+	}
+
+	&__title {
+		text-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+		color: #ffffff;
+		margin-bottom: 0;
+	}
+
+	&__text {
+		font-size: ptr(16);
+		text-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+		color: #ffffff;
+		margin-top: ptr(11);
+		margin-bottom: 0;
+	}
+
+	&__more-news {
+		position: relative;
+		z-index: 10;
+		text-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+		color: #ffffff;
+		margin-bottom: 0;
+
+		.fa {
+			margin-left: ptr(5);
+		}
+	}
+}

@@ -1,0 +1,73 @@
+/* 05.40. Pagination */
+.pagination {
+	display: inline-block;
+	font-size: 0;
+	text-align: center;
+	margin-top: ptr(30);
+	width: 100%;
+
+	.page-numbers {
+		display: inline-block;
+		font-size: ptr(16);
+		font-weight: bold;
+		text-align: center;
+		line-height: ptr(60);
+		background-color: #ffffff;
+		color: $brand-secondary;
+		border: 2px solid #dddddd;
+		border-left: 0;
+		width: ptr(60);
+		height: ptr(60);
+		transition: $primary-transition;
+
+		&:first-child {
+			border-left: 2px solid #dddddd;
+		}
+
+		&:focus,
+		&:hover {
+			color: $brand-primary;
+			text-decoration: none;
+		}
+	}
+
+	.current {
+		color: $brand-primary;
+		border: 2px solid $brand-primary;
+		margin-left: -2px;
+
+		&:first-child {
+			border-color: $brand-primary;
+		}
+	}
+
+	.dots {
+		&:focus,
+		&:hover {
+			color: $brand-secondary;
+		}
+	}
+
+	.prev,
+	.next {
+		color: #999999;
+		transition: $primary-transition;
+
+		&:focus,
+		&:hover {
+			color: $brand-secondary;
+		}
+	}
+
+	.prev {
+		border-top-left-radius: 50%;
+		border-bottom-left-radius: 50%;
+		padding-left: ptr(8);
+	}
+
+	.next {
+		border-top-right-radius: 50%;
+		border-bottom-right-radius: 50%;
+		padding-right: ptr(8);
+	}
+}

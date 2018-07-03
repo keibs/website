@@ -1,0 +1,10 @@
+/* Repeating fields in widgets */
+.pt-widget-single-timetable {
+	border: 1px solid rgba(0,0,0,0.1);
+	background-color: rgba(0,0,0,0.03);
+	margin-bottom: 10px;
+}
+
+.pt-remove-timetable-item {
+	text-decoration: none;
+}

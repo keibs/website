@@ -1,0 +1,50 @@
+/* 05.29. Opening Time */
+.time-table {
+	.week-day {
+		display: flex;
+		font-size: ptr(14);
+		margin-bottom: ptr(10);
+
+		dt {
+			text-transform: uppercase;
+			margin-bottom: 0;
+		}
+
+		&__line {
+			position: relative;
+			flex: 1 1 auto;
+
+			&::after {
+				position: absolute;
+				content: '';
+				border-bottom: 1px dashed rgba(0, 0, 0, .1);
+				bottom: ptr(5);
+				left: ptr(10);
+				right: ptr(10);
+			}
+		}
+
+		dd {
+			margin-bottom: 0;
+		}
+
+		&.today {
+			color: $brand-primary;
+			font-weight: 800;
+		}
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+
+	.additional-info {
+		font-size: ptr(14);
+		margin-top: ptr(12);
+	}
+
+	.widget-title {
+		text-transform: uppercase;
+		margin-bottom: ptr(19);
+	}
+}

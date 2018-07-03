@@ -1,0 +1,459 @@
+/* 05.42. WordPress Widgets */
+
+// scss-lint:disable SelectorFormat, NestingDepth, SelectorDepth
+
+/* Applies to all widgets */
+.widget {
+	select,
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+/* Calendar Widget */
+.widget_calendar {
+	table {
+		width: 100%;
+		border: 0;
+	}
+
+	caption {
+		background-color: $brand-primary;
+		color: #ffffff;
+		padding: ptr(5) 0;
+		text-align: center;
+		border-radius: $border-radius;
+		caption-side: inherit;
+	}
+
+	thead {
+		th {
+			padding: ptr(5) 0;
+			text-align: center;
+			color: $gray-light;
+			background-color: rgba(0, 0, 0, .05);
+			border: 1px solid rgba(0, 0, 0, .05);
+		}
+	}
+
+	tbody {
+		td {
+			padding: ptr(3) 0;
+			text-align: center;
+			border: 1px solid rgba(0, 0, 0, .05);
+		}
+	}
+
+	tfoot {
+		td {
+			padding: ptr(5);
+			border: 0;
+
+			&:last-of-type {
+				a {
+					float: right;
+				}
+			}
+		}
+	}
+
+	.footer & {
+		thead {
+			th {
+				background-color: rgba(255, 255, 255, .05);
+				border: 1px solid rgba(255, 255, 255, .05);
+			}
+		}
+
+		tbody {
+			td {
+				border: 1px solid rgba(255, 255, 255, .05);
+			}
+		}
+	}
+}
+
+/* Tag Cloud Widget */
+.widget_tag_cloud {
+	a {
+		display: inline-block;
+		font-weight: 800;
+		font-size: ptr(12);
+		text-transform: uppercase;
+		padding: ptr(4) ptr(10) ptr(3);
+		margin-right: ptr(2);
+		margin-bottom: ptr(5);
+		background-color: #aaaaaa;
+		color: #ffffff;
+		border-radius: ptr(4);
+		transition: $primary-transition;
+
+		&:focus,
+		&:hover {
+			background-color: darken(#aaaaaa, 5);
+			color: #ffffff;
+			text-decoration: none;
+		}
+	}
+}
+
+/* Search Widget */
+.widget_search {
+	label {
+		margin-bottom: 0;
+		width: 100%;
+	}
+
+	.search-form {
+		position: relative;
+	}
+
+	.search-field {
+		display: block;
+		height: ptr(60);
+		font-size: ptr(16);
+		background-color: #ffffff;
+		color: $gray-dark;
+		border: 3px solid $brand-secondary;
+		border-radius: ptr(4);
+		padding: 0 ptr(60) 0 ptr(20);
+		transition: $primary-transition;
+
+		&:hover {
+			border: 3px solid $brand-secondary;
+		}
+
+		&:focus {
+			border: 3px solid $brand-primary;
+		}
+	}
+
+	.search-submit {
+		position: absolute;
+		right: 3px;
+		top: 3px;
+		height: ptr(53);
+		width: ptr(60);
+		padding: 0;
+		background-color: #ffffff;
+		border: 0;
+		color: $brand-secondary;
+
+		@include media-breakpoint-up(lg) {
+			height: ptr(54);
+		}
+
+		.fa {
+			font-size: ptr(22);
+		}
+	}
+}
+
+/* Widgets With Lists */
+.widget_archive,
+.widget_pages,
+.widget_categories,
+.widget_meta,
+.widget_recent_comments,
+.widget_recent_entries,
+.widget_rss {
+	ul {
+		@include list-unstyled;
+		padding-right: 0;
+	}
+
+	> ul {
+		> li {
+			&:first-of-type {
+				> a {
+					padding-top: 0;
+				}
+
+				&::after {
+					display: none;
+				}
+			}
+
+			&:last-of-type {
+				> a {
+					padding-bottom: 0;
+				}
+			}
+		}
+	}
+
+	li {
+		position: relative;
+
+		&::after {
+			position: absolute;
+			content: '';
+			border-top: 1px dashed rgba(0, 0, 0, .15);
+			width: 100%;
+			height: 1px;
+			left: 0;
+			top: 0;
+
+			.footer & {
+				border-top: 1px dashed rgba(255, 255, 255, .15);
+			}
+		}
+	}
+
+	.current-cat,
+	.current_page_item {
+		a {
+			color: $brand-primary;
+		}
+	}
+
+	a {
+		display: inline-block;
+		color: $brand-secondary;
+		font-weight: 800;
+		font-size: ptr(14);
+		margin-right: ptr(5);
+		padding: ptr(20.5) 0;
+		word-wrap: break-word;
+		transition: $primary-transition;
+
+		.footer & {
+			color: #a3adbc;
+		}
+
+		&:hover {
+			color: $brand-primary;
+			text-decoration: none;
+		}
+	}
+
+	.children a {
+		padding-left: ptr(10);
+	}
+
+	.children .children a {
+		padding-left: ptr(20);
+	}
+
+	.children .children .children a {
+		padding-left: ptr(30);
+	}
+}
+
+.widget_archive,
+.widget_pages,
+.widget_categories,
+.widget_meta {
+	a {
+		position: relative;
+
+		&::before {
+			opacity: 0;
+			visibility: visible;
+			position: absolute;
+			content: '\f178';
+			font-family: 'FontAwesome';
+			font-size: ptr(18);
+			color: $brand-primary;
+			left: 0;
+			transition: $primary-transition;
+		}
+
+		&:hover {
+			padding-left: ptr(30);
+
+			&::before {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+}
+
+.widget_recent_comments {
+	li {
+		padding: ptr(17) 0;
+	}
+
+	a {
+		padding: 0;
+	}
+}
+
+// Specific widget RSS style.
+.widget_rss {
+	li {
+		padding-bottom: ptr(15);
+
+		&::after {
+			display: none;
+		}
+	}
+
+	a {
+		padding: 0 0 ptr(5);
+	}
+}
+
+/* Images in text widgets. */
+.textwidget {
+	a > img {
+		&.alignright,
+		&.alignnone,
+		&.alignleft,
+		&.aligncenter {
+			margin-top: 0;
+		}
+	}
+
+	> p:last-of-type {
+		margin-bottom: 0;
+	}
+}
+
+/* Custom Menu */
+.widget_nav_menu {
+	ul {
+		@include list-unstyled;
+	}
+
+	.sub-menu {
+		padding-left: ptr(10);
+	}
+}
+
+.content-area {
+	.widget_nav_menu {
+		.menu { // Topmost UL
+			display: inline-block;
+			width: 100%;
+			border: 2px solid #dddddd; // Border around whole menu.
+			border-radius: ptr(4);
+
+			a {
+				position: relative;
+				display: block;
+				font-size: ptr(16);
+				font-weight: 800;
+				color: $brand-secondary;
+				padding: ptr(17) ptr(25);
+				border-top: 2px solid #dddddd; // Top border for each link.
+				transition: $primary-transition;
+
+				// Arrow which shows up on :hover.
+				&::before {
+					opacity: 0;
+					visibility: visible;
+					position: absolute;
+					content: '\f178';
+					font-family: 'FontAwesome';
+					font-size: ptr(18);
+					color: $brand-primary;
+					left: ptr(25);
+					transition: $primary-transition;
+				}
+
+				&:focus,
+				&:hover {
+					padding-left: ptr(57);
+					text-decoration: none;
+					color: $brand-primary;
+
+					// Arrow which shows up on :hover.
+					&::before {
+						opacity: 1;
+						visibility: visible;
+					}
+				}
+			}
+
+			li {
+				&.current-menu-item {
+					&:first-of-type {
+						// Correct border :active state for first link.
+						> a {
+							border-top: 2px solid $brand-primary;
+							margin-top: -2px;
+							border-top-left-radius: ptr(4);
+							border-top-right-radius: ptr(4);
+						}
+					}
+
+					&:last-of-type {
+						// Correct border :active state for last link.
+						> a {
+							border-bottom-left-radius: ptr(4);
+							border-bottom-right-radius: ptr(4);
+						}
+					}
+				}
+			}
+
+			> li {
+				&:first-of-type {
+					// First link in the menu doesn't need top border.
+					> a {
+						border-top: 0;
+					}
+				}
+			}
+
+			.current-menu-item {
+				// Current menu item border must go over the border from topmust UL/menu container.
+				> a {
+					color: $brand-primary;
+					border: 2px solid $brand-primary;
+					margin-left: -2px;
+					margin-right: -2px;
+					margin-bottom: -2px;
+					z-index: 1;
+				}
+			}
+		}
+
+		.sub-menu {
+			padding-left: 0;
+
+			a {
+				padding-left: ptr(42);
+			}
+
+			.sub-menu {
+				a {
+					padding-left: ptr(57);
+				}
+
+				.sub-menu {
+					a {
+						padding-left: ptr(72);
+					}
+
+					.sub-menu {
+						a {
+							padding-left: ptr(87);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.footer {
+	.widget_nav_menu {
+		.sub-menu {
+			padding-left: ptr(12);
+		}
+
+		a {
+			display: block;
+			padding: ptr(8) 0;
+			color: #a3adbc;
+
+			@include media-breakpoint-up(lg) {
+				padding: 0 0 ptr(6);
+			}
+		}
+	}
+}

@@ -1,0 +1,434 @@
+/* 05.07. Footer */
+.footer {
+	font-size: ptr(14);
+
+	// Top part of Footer.
+	&-top {
+		background-color: $brand-secondary;
+		color: #a3adbc;
+
+		@include media-breakpoint-up(lg) {
+			display: flex;
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		a {
+			color: inherit;
+		}
+
+		// Logo footer area.
+		&__logo {
+			display: block;
+			font-size: ptr(36);
+			font-weight: 800;
+			text-align: center;
+			line-height: 1.2;
+			background-color: $brand-primary;
+			padding: ptr(20);
+			margin-left: -15px;
+			margin-right: -15px;
+			word-wrap: break-word;
+
+			@include media-breakpoint-up(lg) {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: ptr(180);
+				margin-left: 0;
+				margin-right: 0;
+			}
+
+			@include media-breakpoint-up(xl) {
+				width: ptr(290);
+			}
+
+			&:focus,
+			&:hover {
+				text-decoration: none;
+				color: #ffffff;
+			}
+
+			.footer-top & {
+				color: #ffffff;
+			}
+
+			span {
+				min-width: 0;
+			}
+
+			+ .footer-top__widgets {
+				@include media-breakpoint-up(lg) {
+					width: calc(100% - #{ptr(240)});
+				}
+
+				@include media-breakpoint-up(xl) {
+					width: calc(100% - #{ptr(350)});
+				}
+			}
+
+			+ .footer-top__info + .footer-top__widgets {
+				@include media-breakpoint-up(lg) {
+					width: calc(100% - #{ptr(420)});
+				}
+
+				@include media-breakpoint-up(xl) {
+					width: calc(100% - #{ptr(640)});
+				}
+			}
+
+			img {
+				flex: none; // IE11 hack.
+			}
+		}
+
+		// Info footer area.
+		&__info {
+			text-align: center;
+			background-color: $gray-lighter;
+			color: $gray;
+			padding: ptr(22) 0 0;
+			margin-left: -15px;
+			margin-right: -15px;
+
+			@include media-breakpoint-up(lg) {
+				display: flex;
+				flex-flow: row wrap;
+				align-content: space-between;
+				text-align: left;
+				width: ptr(180);
+				padding: ptr(52) ptr(30) 0;
+				margin-left: 0;
+				margin-right: 0;
+			}
+
+			@include media-breakpoint-up(xl) {
+				width: ptr(290);
+				padding: ptr(52) ptr(60) 0;
+			}
+
+			p {
+				font-size: ptr(14);
+				line-height: inherit;
+			}
+
+			+ .footer-top__widgets {
+				@include media-breakpoint-up(lg) {
+					width: calc(100% - #{ptr(240)});
+				}
+
+				@include media-breakpoint-up(xl) {
+					width: calc(100% - #{ptr(350)});
+				}
+			}
+		}
+
+		&__text {
+			width: 100%;
+			word-wrap: break-word;
+		}
+
+		&__social-icons {
+			position: relative;
+			flex: 1 1 auto;
+			text-align: center;
+			border-top: 1px solid rgba(0, 0, 0, .1);
+			padding: ptr(20) 0;
+			margin-top: ptr(15);
+
+			@include media-breakpoint-up(lg) {
+				border-top: 0;
+				padding: ptr(20) 0;
+				margin-top: ptr(30);
+			}
+
+			.icon-container {
+				position: relative;
+				display: inline-block;
+				font-size: ptr(18);
+				padding-right: ptr(10);
+				margin-right: ptr(8);
+
+				@include media-breakpoint-up(xl) {
+					padding-right: ptr(18);
+					margin-right: ptr(16);
+				}
+
+				&:last-of-type {
+					padding-right: 0;
+					margin-right: 0;
+
+					&::after {
+						display: none;
+					}
+				}
+
+				// Lines between social icons.
+				&::after {
+					position: absolute;
+					content: '';
+					top: calc(50% - #{ptr(15)});
+					right: 0;
+					width: 1px;
+					height: ptr(30);
+					background-color: rgba(0, 0, 0, .1);
+				}
+
+				.fa {
+					color: $brand-secondary;
+				}
+			}
+
+			// Line above social icons.
+			&::before {
+				@include media-breakpoint-up(lg) {
+					position: absolute;
+					content: '';
+					top: 0;
+					left: ptr(-30);
+					right: ptr(-30);
+					height: 1px;
+					background-color: rgba(0, 0, 0, .1);
+				}
+
+				@include media-breakpoint-up(xl) {
+					left: ptr(-60);
+					right: ptr(-60);
+				}
+			}
+		}
+
+		// Footer widget area.
+		&__widgets {
+			padding: ptr(27) 0 0;
+
+			@include media-breakpoint-up(lg) {
+				width: calc(100% - #{ptr(60)});
+				padding: ptr(57) ptr(30) ptr(23);
+			}
+
+			@include media-breakpoint-up(xl) {
+				width: calc(100% - #{ptr(60)});
+				padding: ptr(57) ptr(60) ptr(23);
+			}
+
+			.widget {
+				margin-bottom: ptr(30);
+			}
+		}
+
+		&__heading {
+			font-size: ptr(16);
+			text-transform: uppercase;
+			color: #ffffff;
+			margin-bottom: ptr(13);
+		}
+
+		// Back to top link.
+		&__back-to-top {
+			border-top: 1px dashed rgba(255, 255, 255, .2);
+
+			@include media-breakpoint-up(lg) {
+				position: relative;
+				display: flex;
+				align-items: center;
+				border-top: 0;
+			}
+
+			&::before {
+				@include media-breakpoint-up(lg) {
+					position: absolute;
+					content: '';
+					top: 0;
+					bottom: 0;
+					left: 0;
+					width: 1px;
+					background: repeating-linear-gradient(180deg, rgba(255, 255, 255, .2), rgba(255, 255, 255, .2) 1px, transparent 0, transparent 6px);
+				}
+			}
+
+			&-link {
+				display: block;
+				font-size: ptr(12);
+				font-weight: bold;
+				text-align: center;
+				text-transform: uppercase;
+				color: #ffffff;
+				padding: ptr(15) 0;
+				transition: $primary-transition;
+
+				@include media-breakpoint-up(lg) {
+					position: absolute;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					white-space: nowrap;
+					transform: rotate(-90deg);
+					width: ptr(60);
+					padding: 0;
+				}
+
+				&:focus {
+					text-decoration: none;
+					color: #ffffff;
+				}
+
+				&:hover {
+					text-decoration: none;
+					color: rgba(255, 255, 255, .8);
+				}
+
+				.fa {
+					transform: rotate(-90deg);
+
+					@include media-breakpoint-up(lg) {
+						font-size: ptr(20);
+						margin-left: ptr(15);
+						transform: none;
+					}
+				}
+			}
+		}
+
+		+ .footer-bottom {
+			border-top: 0;
+
+			.footer-bottom__center {
+				@include media-breakpoint-up(lg) {
+					border-top: 1px solid rgba(0, 0, 0, .1);
+				}
+			}
+		}
+	}
+
+	// Bottom part of Footer.
+	&-bottom {
+		text-align: center;
+		background-color: #ffffff;
+		border-top: 1px solid rgba(0, 0, 0, .1);
+
+		@include media-breakpoint-up(lg) {
+			display: flex;
+			text-align: left;
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		// Left side (under logo) of footer bottom.
+		&__left {
+			padding: ptr(16) ptr(30);
+
+			@include media-breakpoint-up(lg) {
+				text-align: center;
+				width: ptr(180);
+				padding: ptr(16) ptr(30);
+			}
+
+			@include media-breakpoint-up(xl) {
+				width: ptr(290);
+				padding: ptr(16) ptr(60);
+			}
+
+			.fa {
+				color: #aaaaaa;
+				margin-right: ptr(2);
+			}
+
+			+ .footer-bottom__text {
+				@include media-breakpoint-up(lg) {
+					width: calc(100% - #{ptr(180)});
+				}
+
+				@include media-breakpoint-up(xl) {
+					width: calc(100% - #{ptr(290)});
+				}
+			}
+
+			+ .footer-bottom__center + .footer-bottom__text {
+				@include media-breakpoint-up(lg) {
+					width: calc(100% - #{ptr(360)});
+				}
+
+				@include media-breakpoint-up(xl) {
+					width: calc(100% - #{ptr(580)});
+				}
+			}
+		}
+
+		// Center side (under info) of footer bottom.
+		&__center {
+			background-color: $gray-lighter;
+			padding: ptr(18) ptr(30) ptr(14);
+			margin-left: -15px;
+			margin-right: -15px;
+
+			@include media-breakpoint-up(lg) {
+				text-align: center;
+				width: ptr(180);
+				border: 1px solid rgba(0, 0, 0, .1);
+				border-bottom: 0;
+				border-top: 0;
+				padding: ptr(18) ptr(30) ptr(14);
+				margin-left: 0;
+				margin-right: 0;
+			}
+
+			@include media-breakpoint-up(xl) {
+				width: ptr(290);
+				padding: ptr(18) ptr(60) ptr(14);
+			}
+
+			a {
+				color: $brand-secondary;
+				font-weight: bold;
+
+				.fa {
+					color: $brand-primary;
+					font-size: ptr(18);
+					margin-right: ptr(5);
+					vertical-align: middle;
+				}
+			}
+
+			+ .footer-bottom__text {
+				@include media-breakpoint-up(lg) {
+					width: calc(100% - #{ptr(180)});
+				}
+
+				@include media-breakpoint-up(xl) {
+					width: calc(100% - #{ptr(290)});
+				}
+			}
+		}
+
+		// Right/text side of footer bottom which has left and right text.
+		&__text {
+			padding: ptr(19.5) ptr(30);
+
+			@include media-breakpoint-up(lg) {
+				display: flex;
+				justify-content: space-between;
+				width: 100%;
+				padding: ptr(19.5) ptr(30);
+			}
+
+			@include media-breakpoint-up(xl) {
+				width: 100%;
+				padding: ptr(19.5) ptr(60);
+			}
+
+			a {
+				color: inherit;
+				font-weight: bold;
+			}
+
+			&-left {
+				margin-bottom: ptr(5);
+
+				@include media-breakpoint-up(lg) {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}

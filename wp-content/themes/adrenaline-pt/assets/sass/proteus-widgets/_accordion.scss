@@ -1,0 +1,99 @@
+/* 05.23. Accordion */
+.accordion {
+	&__panel {
+		.panel-title {
+			margin-bottom: 0;
+
+			a {
+				position: relative;
+				display: block;
+				font-weight: 800;
+				font-size: ptr(16);
+				color: $brand-primary;
+				border-top: 1px dashed rgba(0, 0, 0, .1);
+				padding: ptr(18) 0;
+				transition: $primary-transition;
+
+				&::after {
+					position: absolute;
+					content: '\f068';
+					font-family: 'FontAwesome';
+					text-align: center;
+					line-height: ptr(26);
+					top: calc(50% - #{ptr(12.5)});
+					right: 0;
+					width: ptr(25);
+					height: ptr(25);
+				}
+
+				&.collapsed {
+					color: $brand-secondary;
+
+					&::after {
+						content: '\f067';
+					}
+				}
+
+				&:focus {
+					text-decoration: none;
+				}
+
+				&:hover {
+					text-decoration: none;
+					color: $brand-primary;
+				}
+			}
+		}
+
+		&:first-of-type {
+			a {
+				border-top: 0;
+			}
+		}
+
+		&:last-of-type {
+			border-bottom: 1px dashed rgba(0, 0, 0, .1);
+		}
+	}
+
+	&__content {
+		.panel-body {
+			font-size: ptr(16);
+			padding: ptr(20) 0;
+			border-top: 1px dashed rgba(0, 0, 0, .1);
+		}
+	}
+
+	.more-link {
+		position: relative;
+		display: block;
+		font-weight: 800;
+		font-size: ptr(16);
+		text-transform: inherit;
+		color: $gray-dark;
+		border-bottom: 1px dashed rgba(0, 0, 0, .1);
+		margin-top: 0;
+		margin-bottom: 0;
+		padding: ptr(18) 0;
+		transition: $primary-transition;
+
+		&::after {
+			position: absolute;
+			content: '\f0c9';
+			font-family: 'FontAwesome';
+			font-size: ptr(13);
+			text-align: center;
+			line-height: ptr(26);
+			top: calc(50% - #{ptr(12.5)});
+			right: 0;
+			width: ptr(25);
+			height: ptr(25);
+		}
+
+		&:focus,
+		&:hover {
+			text-decoration: none;
+			color: $brand-primary;
+		}
+	}
+}

@@ -1,0 +1,36 @@
+/* 05.34. Special Title */
+
+// scss-lint:disable ImportantRule
+
+.special-title {
+	margin-bottom: 0;
+	display: none;
+
+	@include media-breakpoint-up(lg) {
+		display: block;
+		position: absolute;
+		font-family: 'Gloria Hallelujah';
+		font-size: ptr(130);
+		text-transform: uppercase;
+		color: rgba(0, 0, 0, .05);
+		left: ptr(10);
+		right: ptr(10);
+		text-align: center;
+		margin-top: ptr(-90);
+
+		@include media-breakpoint-up(xl) {
+			font-size: ptr(150);
+			margin-top: ptr(-110);
+		}
+	}
+}
+
+.widget-special-title {
+	@include media-breakpoint-down(md) {
+		margin-bottom: 0 !important;
+	}
+
+	@include media-breakpoint-up(lg) {
+		padding-top: ptr(150);
+	}
+}

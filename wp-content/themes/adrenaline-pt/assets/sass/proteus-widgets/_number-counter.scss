@@ -1,0 +1,56 @@
+/* 05.21. Number Counter */
+.number-counters {
+	display: flex;
+	flex-direction: column;
+
+	@include media-breakpoint-up(lg) {
+		flex-direction: row;
+	}
+}
+
+.number-counter {
+	flex: 1;
+	margin-bottom: ptr(30);
+	transition: $primary-transition;
+
+	@include media-breakpoint-up(lg) {
+		margin-right: ptr(30);
+		margin-bottom: 0;
+	}
+
+	&:last-of-type {
+		margin-bottom: 0;
+
+		@include media-breakpoint-up(lg) {
+			margin-right: 0;
+		}
+	}
+
+	&__number {
+		font-size: ptr(36);
+		color: $brand-secondary;
+		line-height: 1;
+	}
+
+	&__title {
+		font-size: ptr(16);
+		color: $gray;
+		margin-top: ptr(6);
+	}
+
+	&__bar {
+		position: relative;
+		height: 3px;
+		width: 100%;
+		background-color: #dddddd;
+		margin-top: ptr(14);
+
+		&--progress {
+			left: 0;
+			width: 0;
+			height: inherit;
+			background-color: $brand-primary;
+			transition: all 1s ease-out;
+		}
+	}
+}

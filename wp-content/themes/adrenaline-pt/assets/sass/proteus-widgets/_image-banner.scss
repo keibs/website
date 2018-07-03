@@ -1,0 +1,85 @@
+/* 05.35. Image Banner */
+.image-banner {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	border-radius: 4px;
+	mask-image: radial-gradient(circle, #ffffff 100%, #000000 100%);
+
+	&::after {
+		position: absolute;
+		content: '';
+		opacity: .5;
+		background-color: rgba(0, 0, 0, .2);
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		transition: all 300ms ease-out;
+	}
+
+	&:focus,
+	&:hover {
+		&::after {
+			opacity: 1;
+		}
+
+		.image-banner__image {
+			transform: scale(1.1);
+		}
+	}
+
+	&__image {
+		width: 100%;
+		transform: scale(1);
+		mask-image: radial-gradient(circle, #ffffff 100%, #000000 100%);
+		transition: all 300ms ease-out;
+	}
+
+	&__content {
+		position: absolute;
+		z-index: 10;
+		text-align: center;
+		padding: ptr(30);
+		left: 0;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%) translate3d(0, 0, 0);
+
+		&--small {
+			.image-banner__title {
+				font-size: ptr(18);
+			}
+		}
+
+		&--big {
+			.image-banner__title {
+				font-size: ptr(30);
+			}
+		}
+	}
+
+	&__title {
+		color: #ffffff;
+		text-transform: uppercase;
+		text-shadow: 0 1px 4px rgba(0, 0, 0, .15);
+		margin-bottom: 0;
+
+		+ .image-banner__text {
+			margin-top: ptr(11);
+		}
+
+		+ .image-banner__cta {
+			margin-top: ptr(20);
+		}
+	}
+
+	&__text {
+		margin-bottom: 0;
+		font-size: ptr(16);
+
+		+ .image-banner__cta {
+			margin-top: ptr(19);
+		}
+	}
+}
